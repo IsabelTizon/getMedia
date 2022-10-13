@@ -312,6 +312,9 @@ footer {
 	height: 40px;
 	padding: 5px;
 }
+.footer-copyright {
+	background-color: #2e2d44;
+}
 /* footer finish  */
 
 @media (max-width: 768px) {
