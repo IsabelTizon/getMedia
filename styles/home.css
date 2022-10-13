@@ -14,6 +14,7 @@
 	transition: 0.5s;
 	background-color: #2e2d44;
 	float: left;
+	z-index: 11;
 }
 /* Shrinking the sidebar from 250px to 80px and center aligining its content*/
 #sidebar.active {
@@ -124,7 +125,7 @@ main {
 .title-vouchers {
 	font-size: 35px;
 }
-.card {
+.subtitle-vouchers .card {
 	border-radius: 20px !important;
 }
 .music-card-5 {
@@ -155,12 +156,11 @@ main {
 	overflow: hidden;
 	text-align: center;
 	display: flex;
-	flex-direction: column;
-	/* align-items: center;
-	justify-content: center; */
+	align-items: center;
+	justify-content: center;
 }
 .overlay {
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(63, 49, 60, 0.5);
 	z-index: 2;
 }
 video {
@@ -188,11 +188,14 @@ video {
 .btn-subscribe {
 	width: 30%;
 }
+
 .text-newsletter {
+	color: #ffffff;
 	margin: 0;
 	padding: 5px;
 	text-transform: uppercase;
 }
+
 .container-btn {
 	display: flex;
 	flex-direction: row;
@@ -209,8 +212,8 @@ button:hover {
 	background-color: #2e2d44 !important;
 	color: white !important;
 }
-/* Newsletter section finish */
 
+/* Newsletter section finish */
 /* Popular section start */
 .popular-section {
 	width: 100%;
@@ -263,7 +266,42 @@ button:hover {
 	padding: 0 !important;
 }
 /* Popular section finish */
+
+/* newsletter start  */
+.newsletter {
+	padding: 70px 0 50px;
+}
+.input-subscribe-field {
+	padding-left: 10px;
+}
+/* newsletter finish  */
 /* main finish  */
+
+/* footer start  */
+footer {
+	background-color: #01061e;
+}
+.title-section-footer {
+	color: #ffffff;
+	font-size: 16px;
+}
+.link-footer {
+	color: #ffffff;
+	font-size: 12px;
+}
+.link-footer:hover {
+	color: #6b22a4;
+	text-decoration: none;
+}
+.icon-footer-rectangle {
+	width: 80px;
+	height: 30px;
+}
+.icon-footer {
+	width: 30px;
+	height: 30px;
+}
+/* footer finish  */
 
 @media (max-width: 768px) {
 	/* 80px and its content aligned to centre. Pushing it off the screen with the
