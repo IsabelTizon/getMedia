@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+
+		<link rel="stylesheet" href="../styles/home.css" />
+
+		<!-- Boostrap css -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+			integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="fake-navbar">
+			<img src="../img/logo.svg" alt="logo" />
+		</div>
+
+		<header>
+			<nav id="sidebar" class="active">
+				<div class="navbar navbar-expand-lg">
+					<div class="container-fluid">
+						<a href="#">
+							<img
+								id="sidebarCollapse"
+								class="nav-icon"
+								src="../img/icons/purple-hamburger.png"
+								alt="home icon"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<ul class="list-unstyled">
+					<li>
+						<a href="#">
+							<img
+								class="nav-icon"
+								src="../img/icons/purple-home.png"
+								alt="home icon"
+							/>
+						</a>
+						<!-- <span class="text-light">Home</span> -->
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="nav-icon"
+								src="../img/icons/purple-search.png"
+								alt="home icon"
+							/>
+						</a>
+						<!-- <span class="text-light">Search</span> -->
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="nav-icon"
+								src="../img/icons/purple-library.png"
+								alt="home icon"
+							/>
+						</a>
+						<!-- <span class="text-light">My Library</span> -->
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="nav-icon"
+								src="../img/icons/purple-voucher.png"
+								alt="home icon"
+							/>
+						</a>
+						<!-- <span class="text-light">Music Cards</span> -->
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="nav-icon"
+								src="../img/icons/purple-shopping-cart.png"
+								alt="home icon"
+							/>
+						</a>
+						<!-- <span class="text-light">My Shopping Basket</span> -->
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="nav-icon"
+								src="../img/icons/contact-message.png"
+								alt="home icon"
+							/>
+						</a>
+						<!-- <span class="text-light">Contact</span> -->
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="nav-icon"
+								src="../img/icons/account.png"
+								alt="home icon"
+							/>
+						</a>
+						<!-- <span class="text-light">My Account</span> -->
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<!-- Intro Section start -->
+			<div class="intro">
+				<div class="text-intro">
+					<p class="title-intro text-light">GetMedia</p>
+					<p class="subtitle-intro text-light">
+						Your Digital Music Service to give you access to a lot of songs
+					</p>
+				</div>
+				<div class="big-logo-silhouette">
+					<img src="../img/Logo-silhouette.svg" alt="big logo" />
+				</div>
+			</div>
+			<div class="input-search">
+				<input
+					class="input-search-field"
+					type="text"
+					placeholder="What music do you want to listen to...?"
+				/>
+				<button type="button" class="btn btn-light btn-search">Search</button>
+			</div>
+			<!-- Intro Section finish -->
+
+			<!-- Music Vouchers Section start -->
+			<div class="music-cards-section">
+				<div class="music-cards-text">
+					<p class="title-vouchers text-light">Our Vouchers</p>
+					<p class="subtitle-vouchers text-light">
+						The music card vouchers and your gitf cards bellow.
+					</p>
+				</div>
+				<div class="card-columns">
+					<div class="card music-card-5">
+						<div class="card-body text-center">
+							<p class="card-text">£ 5</p>
+						</div>
+					</div>
+					<div class="card music-card-10">
+						<div class="card-body text-center">
+							<p class="card-text">£ 10</p>
+						</div>
+					</div>
+					<div class="card music-card-20">
+						<div class="card-body text-center">
+							<p class="card-text">£ 20</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Music Vouchers Section finish -->
+
+			<!-- Music Cards Popular Section start -->
+			<div class="popular-section">
+				<div class="music-cards-carousel-title">
+					<p>Popular</p>
+				</div>
+				<div id="carousel-web" class="col p-0 m-0">
+					<div
+						id="carouselExampleControls"
+						class="carousel slide"
+						data-bs-ride="carousel"
+					>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="row">
+									<div class="col-2">
+										<div class="card card-to-play">
+											<img
+												src="../img/disorder-JoyDivision.png"
+												class="card-img-top"
+												alt="clothes equipment"
+											/>
+											<div class="card-body card-body-music">
+												<h4 class="card-title">Song</h4>
+												<p class="card-text-group-carousel">group</p>
+												<a class="btn bg-info" href="#" role="button">play</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="card card-to-play">
+											<img
+												src="../img/disorder-JoyDivision.png"
+												class="card-img-top"
+												alt="clothes equipment"
+											/>
+											<div class="card-body card-body-music">
+												<h4 class="card-title">Song</h4>
+												<p class="card-text-group-carousel">group</p>
+												<a class="btn bg-info" href="#" role="button">play</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="card card-to-play">
+											<img
+												src="../img/disorder-JoyDivision.png"
+												class="card-img-top"
+												alt="clothes equipment"
+											/>
+											<div class="card-body card-body-music">
+												<h4 class="card-title">Song</h4>
+												<p class="card-text-group-carousel">group</p>
+												<a class="btn bg-info" href="#" role="button">play</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="card card-to-play">
+											<img
+												src="../img/disorder-JoyDivision.png"
+												class="card-img-top"
+												alt="clothes equipment"
+											/>
+											<div class="card-body card-body-music">
+												<h4 class="card-title">Song</h4>
+												<p class="card-text-group-carousel">group</p>
+												<a class="btn bg-info" href="#" role="button">play</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="card card-to-play">
+											<img
+												src="../img/disorder-JoyDivision.png"
+												class="card-img-top"
+												alt="clothes equipment"
+											/>
+											<div class="card-body card-body-music">
+												<h4 class="card-title">Song</h4>
+												<p class="card-text-group-carousel">group</p>
+												<a class="btn bg-info" href="#" role="button">play</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="card card-to-play">
+											<img
+												src="../img/disorder-JoyDivision.png"
+												class="card-img-top"
+												alt="clothes equipment"
+											/>
+											<div class="card-body card-body-music">
+												<h4 class="card-title">Song</h4>
+												<p class="card-text-group-carousel">group</p>
+												<a class="btn bg-info" href="#" role="button">play</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-2">
+										<div class="card card-to-play">
+											<img
+												src="../img/disorder-JoyDivision.png"
+												class="card-img-top"
+												alt="clothes equipment"
+											/>
+											<div class="card-body card-body-music">
+												<h4 class="card-title">Song</h4>
+												<p class="card-text-group-carousel">group</p>
+												<a class="btn bg-info" href="#" role="button">play</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="card card-to-play">
+											<img
+												src="../img/disorder-JoyDivision.png"
+												class="card-img-top"
+												alt="clothes equipment"
+											/>
+											<div class="card-body card-body-music">
+												<h4 class="card-title">Song</h4>
+												<p class="card-text-group-carousel">group</p>
+												<a class="btn bg-info" href="#" role="button">play</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="card card-to-play">
+											<img
+												src="../img/disorder-JoyDivision.png"
+												class="card-img-top"
+												alt="clothes equipment"
+											/>
+											<div class="card-body card-body-music">
+												<h4 class="card-title">Song</h4>
+												<p class="card-text-group-carousel">group</p>
+												<a class="btn bg-info" href="#" role="button">play</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="card card-to-play">
+											<img
+												src="../img/disorder-JoyDivision.png"
+												class="card-img-top"
+												alt="clothes equipment"
+											/>
+											<div class="card-body card-body-music">
+												<h4 class="card-title">Song</h4>
+												<p class="card-text-group-carousel">group</p>
+												<a class="btn bg-info" href="#" role="button">play</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="card card-to-play">
+											<img
+												src="../img/disorder-JoyDivision.png"
+												class="card-img-top"
+												alt="clothes equipment"
+											/>
+											<div class="card-body card-body-music">
+												<h4 class="card-title">Song</h4>
+												<p class="card-text-group-carousel">group</p>
+												<a class="btn bg-info" href="#" role="button">play</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden"></span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden"></span>
+					</button>
+				</div>
+			</div>
+			<!-- Music Cards Popular Section finish -->
+
+			<!-- Newsletter Section  start -->
+			<section class="newsletter">
+				<div class="video-wrapper">
+					<div class="overlay">
+						<video class="video-sign" playinline autoplay muted loop>
+							<source src="../media/festival.mp4" type="video/mp4" />
+						</video>
+					</div>
+					<div class="container-sign-newsletter">
+						<p class="text-newsletter">
+							Enjoy our <span style="color: yellow">newsletter</span>
+						</p>
+						<div class="input-subscribe">
+							<input
+								class="input-subscribe-field"
+								type="text"
+								placeholder="email@gmail.com"
+							/>
+							<button type="button" class="btn btn-light btn-subscribe">
+								Search
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Newsletter Section  finish -->
+		</main>
+	</body>
+	<!-- Boostrap js-->
+	<script
+		src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"
+	></script>
+
+	<!-- jQuery -->
+	<script src="scripts/jquery-3.0.0.min.js"></script>
+	<script>
+		// $(document).ready(function () {
+		// 	$("#sidebarCollapse").on("click", function () {
+		// 		$("#sidebar").toggleClass("active");
+		// 	});
+		// });
+		$(document).ready(function () {
+			$("#sidebarCollapse").on("click", function () {
+				$("#sidebar").toggleClass("active");
+			});
+		});
+	</script>
+</html>

@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+video {
+	/** Simulationg background-size: cover */
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.video-wrapper {
+	/* Telling our absolute positioned video to 
+  be relative to this element */
+	position: relative;
+
+	width: 100vw;
+	height: 100vh;
+
+	/* Will not allow the video to overflow the 
+  container */
+	overflow: hidden;
+
+	/* Centering the container's content vertically 
+  and horizontally */
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container-sign {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	width: 30vw;
+	margin: auto;
+	background: none;
+}
+.overlay {
+	background: rgba(85, 92, 85, 0.5);
+}
+.p-overlay {
+	margin: 0;
+	padding: 5px;
+}
+img {
+	margin-top: 30px;
+}
+.container-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+button {
+	border: 2px solid #2e2d44 !important;
+	width: 45%;
+	justify-content: center;
+}
+
+button:hover {
+	background-color: #2e2d44 !important;
+	color: white !important;
+}

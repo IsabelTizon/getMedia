@@ -1,0 +1,326 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+/* navbar start */
+#sidebar {
+	height: 100vh;
+	width: 250px;
+
+	float: left;
+	position: fixed;
+	overflow-x: hidden;
+	padding-top: 20px;
+	transition: 0.5s;
+	background-color: #2e2d44;
+	float: left;
+}
+/* Shrinking the sidebar from 250px to 80px and center aligining its content*/
+#sidebar.active {
+	min-width: 40px;
+	max-width: 80px;
+	text-align: center;
+}
+
+/* Toggling the sidebar header content, hide the big heading [h3] and showing the small heading [strong] and vice versa*/
+#sidebar .sidebar-header {
+	display: none;
+}
+#sidebar.active .sidebar-header {
+	display: none;
+}
+#sidebar.active .sidebar-header {
+	display: block;
+}
+
+/* #sidebar ul li a {
+	text-align: left;
+} */
+
+#sidebar.active ul li a {
+	padding: 10px 5px;
+	margin-right: 0;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.list-unstyled {
+	padding-top: 40px;
+}
+.nav-icon {
+	width: 30px;
+	height: 30px;
+}
+/* navbar finish */
+
+/* top bar start */
+.fake-navbar {
+	position: fixed;
+	width: 100vw;
+	height: 80px;
+	background-color: #2e2d44;
+	padding-left: 80px;
+	z-index: 10;
+}
+/*top bar finish */
+
+/* General start */
+main {
+	padding-top: 100px;
+	padding-left: 80px;
+	background-color: #01061e;
+}
+/* general finish  */
+
+/*intro section start */
+.intro {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.title-intro {
+	font-size: 65px;
+	padding-top: 12%;
+}
+.subtitle-intro {
+	width: 80%;
+}
+.big-logo-silhouette img {
+	height: 280px;
+	padding-top: 7%;
+}
+.input-search {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.input-search-field {
+	width: 50%;
+	height: 40px;
+	padding-left: 10px;
+}
+.btn-search {
+	color: #ffffff !important;
+	background-color: #9052bf !important;
+	border-color: #9052bf !important;
+}
+/*intro section finish */
+
+/* Vouchers section start */
+.music-cards-section {
+	background-color: #2e2d449c;
+	width: 90%;
+	margin: auto;
+	padding: 5%;
+}
+.music-cards-text {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 5px;
+}
+.title-vouchers {
+	font-size: 35px;
+}
+.card {
+	border-radius: 20px !important;
+}
+.music-card-5 {
+	background-color: #6b22a4 !important;
+}
+.music-card-10 {
+	background-color: #11b04b !important;
+}
+.music-card-20 {
+	background-color: #f539b5 !important;
+}
+.card-text {
+	font-weight: bold;
+	font-size: 20px;
+}
+/* Vouchers section finish */
+
+/* Newsletter section start */
+.newsletter {
+	background-color: #01061e;
+	padding: 100px 0;
+}
+
+.video-wrapper {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center;
+	justify-content: center; */
+}
+.overlay {
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+video {
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.container-sign-newsletter {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	width: 70%;
+	margin: auto;
+	background: none;
+	z-index: 3;
+}
+.input-subscribe-field {
+	display: flex;
+	flex-direction: row;
+	width: 70%;
+}
+.btn-subscribe {
+	width: 30%;
+}
+.text-newsletter {
+	margin: 0;
+	padding: 5px;
+	text-transform: uppercase;
+}
+.container-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+button {
+	border: 2px solid #2e2d44 !important;
+	width: 45%;
+	justify-content: center;
+}
+
+button:hover {
+	background-color: #2e2d44 !important;
+	color: white !important;
+}
+/* Newsletter section finish */
+
+/* Popular section start */
+.popular-section {
+	width: 100%;
+	margin: 0;
+	padding: 30px;
+}
+.music-cards-carousel-title {
+	color: #ffffff;
+	font-size: 30px;
+}
+.carousel-control-prev .carousel-control-next {
+	width: 20px;
+	height: 250px !important;
+}
+.card-to-play {
+	height: 250px;
+	margin: 0 !important;
+	border: 2px solid #01061e !important;
+}
+.card-img-top {
+	height: 140px;
+}
+.card-body-music {
+	height: 30px;
+	background-color: #2e2d44;
+	padding: 10px !important;
+}
+.card-title {
+	font-size: 15px;
+	margin: 0 !important;
+	color: #ffffff;
+}
+.card-text-group-carousel {
+	font-size: 12px;
+	margin: 0 !important;
+	color: #d0cbcb;
+	font-weight: lighter;
+}
+
+.btn.bg-info {
+	width: 100% !important;
+	margin-top: 7px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+	width: 40px !important;
+	height: 200px;
+}
+.col-2 {
+	padding: 0 !important;
+}
+/* Popular section finish */
+/* main finish  */
+
+@media (max-width: 768px) {
+	/* 80px and its content aligned to centre. Pushing it off the screen with the
+       negative left margin
+    */
+	#sidebar.active {
+		min-width: 80px;
+		max-width: 80px;
+		text-align: center;
+		margin-left: -80px !important;
+	}
+
+	/* Reappearing the sidebar on toggle button click */
+	#sidebar {
+		margin-left: 0;
+	}
+
+	/* Toggling the sidebar header content, 
+       hide the big heading [h3] and showing the small heading [strong] and vice versa
+    */
+	#sidebar .sidebar-header strong {
+		display: none;
+	}
+	#sidebar.active .sidebar-header h3 {
+		display: none;
+	}
+	#sidebar.active .sidebar-header strong {
+		display: block;
+	}
+
+	/* Downsize the navigation links font size */
+	#sidebar.active ul li a {
+		padding: 20px 10px;
+		font-size: 0.85em;
+	}
+
+	#sidebar.active ul li a i {
+		margin-right: 0;
+		display: block;
+		font-size: 1.8em;
+		margin-bottom: 5px;
+	}
+
+	/* Adjust the dropdown links padding*/
+	#sidebar.active ul ul a {
+		padding: 10px !important;
+	}
+
+	/* Changing the arrow position to bottom center position, 
+      translateX(50%) works with right: 50% 
+      to accurately  center the arrow */
+	.dropdown-toggle::after {
+		top: auto;
+		bottom: 10px;
+		right: 50%;
+		-webkit-transform: translateX(50%);
+		-ms-transform: translateX(50%);
+		transform: translateX(50%);
+	}
+}
