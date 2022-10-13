@@ -128,6 +128,10 @@ main {
 .subtitle-vouchers .card {
 	border-radius: 20px !important;
 }
+.text-vouchers {
+	color: #ffffff;
+	font-weight: lighter;
+}
 .music-card-5 {
 	background-color: #6b22a4 !important;
 }
