@@ -1,0 +1,9 @@
+.background1 {
+	width: 50vw;
+	height: 50vh;
+	background-image: linear-gradient(rgb(255, 69, 100), blue);
+}
+
+table {
+	background-color: black;
+}

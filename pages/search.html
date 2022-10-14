@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AngularJS-iTunes</title>
+
+		<!-- CSS Styles -->
+		<link rel="stylesheet" href="../styles/general.css" />
+		<link rel="stylesheet" type="text/css" href="../styles/search.css" />
+	</head>
+
+	<!-- Boostrap css -->
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+		crossorigin="anonymous"
+	/>
+
+	<!-- Scripts -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.js"></script>
+	<!-- the script which will contain the iTunesController -->
+	<script src="../js/itunes-controler.js"></script>
+
+	<!-- use the ng-controller directive to scope this body to iTunesController -->
+	<body>
+		<header>
+			<div class="fake-navbar">
+				<img src="../img/logo.svg" alt="logo" />
+			</div>
+			<nav id="sidebar" class="active">
+				<div class="navbar navbar-expand-lg">
+					<div class="container-fluid">
+						<a href="#">
+							<img
+								id="sidebarCollapse"
+								class="nav-icon"
+								src="../img/icons/purple-hamburger.png"
+								alt="home icon"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<ul class="list-unstyled">
+					<li>
+						<a href="#">
+							<img
+								class="nav-icon"
+								src="../img/icons/purple-home.png"
+								alt="home icon"
+							/>
+						</a>
+						<!-- <span class="text-light">Home</span> -->
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="nav-icon"
+								src="../img/icons/purple-search.png"
+								alt="home icon"
+							/>
+						</a>
+						<!-- <span class="text-light">Search</span> -->
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="nav-icon"
+								src="../img/icons/purple-library.png"
+								alt="home icon"
+							/>
+						</a>
+						<!-- <span class="text-light">My Library</span> -->
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="nav-icon"
+								src="../img/icons/purple-voucher.png"
+								alt="home icon"
+							/>
+						</a>
+						<!-- <span class="text-light">Music Cards</span> -->
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="nav-icon"
+								src="../img/icons/purple-shopping-cart.png"
+								alt="home icon"
+							/>
+						</a>
+						<!-- <span class="text-light">My Shopping Basket</span> -->
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="nav-icon"
+								src="../img/icons/contact-message.png"
+								alt="home icon"
+							/>
+						</a>
+						<!-- <span class="text-light">Contact</span> -->
+					</li>
+					<li>
+						<a href="#">
+							<img
+								class="nav-icon"
+								src="../img/icons/account.png"
+								alt="home icon"
+							/>
+						</a>
+						<!-- <span class="text-light">My Account</span> -->
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main ng-controller="iTunesController">
+			<!-- show an error if there's a search error -->
+			{{ error }}
+			<!-- add form, use ng-submit directive to call
+searchiTunes, pass the artist -->
+			<form name="search" ng-submit="searchiTunes(artist)">
+				<!-- Artist/band name required, use the ng-model
+    directive to pass the artist name back into the
+    controller/model -->
+				<!-- La entidad &nbsp; (del inglés Non Breaking Space que significa espacio sin ruptura) sirve para representar en HTML un espacio en blanco-->
+				<input type="search" required placeholder="Artist" ng-model="artist" />
+				<input type="submit" value="Search" />&nbsp;
+			</form>
+			<!-- ng-show directive to decide when to show results. In this case, we will show the songs when there
+    are songs to show. -->
+			<table ng-show="songs">
+				<thead>
+					<tr>
+						<th>Album Artwork</th>
+						<th>Track</th>
+						<th>Preview&nbsp;</th>
+						<th>Price</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- ng-repeat directive to loop over each
+song in the songs list. -->
+					<!-- The song data is loaded into objects for
+easy access. Just call on the attributes
+you need. -->
+					<tr ng-repeat="song in songs">
+						<!-- ng-src lets you load imgs when data is present. -->
+						<td>
+							<img
+								ng-src="{{song.artworkUrl60}}"
+								alt="{{song.collectionName}}"
+							/>
+						</td>
+						<td>{{song.trackName}}</td>
+						<td><a href="{{song.previewUrl}}">Play</a></td>
+						<td>{{song.collectionPrice}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+		<footer>
+			<div class="container container-footer p-0">
+				<div class="row">
+					<div class="col ourProducts-section">
+						<p class="title-section-footer">Our Products</p>
+						<a class="row link-footer" href="#">£ 5 Voucher</a>
+						<a class="row link-footer" href="#">£ 10 Voucher</a>
+						<a class="row link-footer" href="http://www.google.com"
+							>£ 20 Voucher</a
+						>
+					</div>
+					<div class="col ourProducts-section">
+						<p class="title-section-footer">About us</p>
+						<a class="row link-footer" href="#">About us</a>
+						<a class="row link-footer" href="#">Card terms and conditions</a>
+						<a class="row link-footer" href="#">Site Map</a>
+					</div>
+					<div class="col ourProducts-section">
+						<p class="title-section-footer">Support</p>
+						<a class="row link-footer" href="#">FAQs</a>
+						<a class="row link-footer" href="#">Contact us</a>
+						<a class="row link-footer" href="#">Complains policy</a>
+					</div>
+					<div class="col ourProducts-section">
+						<div class="col">
+							<p class="title-section-footer">Follow us on social</p>
+							<div class="row">
+								<a class="link-footer" href="#"
+									><img
+										class="icon-footer"
+										src="../img/icons/facebook.png"
+										alt="facebook icon"
+								/></a>
+								<a class="link-footer" href="#"
+									><img
+										class="icon-footer"
+										src="../img/icons/twiter.png"
+										alt="twiter icon"
+								/></a>
+								<a class="link-footer" href="#"
+									><img
+										class="icon-footer"
+										src="../img/icons/instagran.png"
+										alt="instagran icon"
+								/></a>
+								<a class="link-footer" href="#"
+									><img
+										class="icon-footer"
+										src="../img/icons/LinkedIn.png"
+										alt="LinkedIn icon"
+								/></a>
+							</div>
+						</div>
+						<div class="col py-5">
+							<p class="title-section-footer">Download our app</p>
+							<div class="row">
+								<a class="link-footer" href="#"
+									><img
+										class="icon-footer-rectangle"
+										src="../img/icons/googlePlay.png"
+										alt="googlePlay icon"
+								/></a>
+								<a class="link-footer" href="#"
+									><img
+										class="icon-footer-rectangle"
+										src="../img/icons/appStore.png"
+										alt="appStore icon"
+								/></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="copyright d-flex justify-content-center text-light py-3">
+					<span class="copyright-Icon"><b>&copy;</b></span> 2022 GetMedia
+				</div>
+			</div>
+		</footer>
+	</body>
+	<!-- Boostrap js-->
+	<script
+		src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"
+	></script>
+</html>
