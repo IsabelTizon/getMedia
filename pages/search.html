@@ -148,25 +148,10 @@ searchiTunes, pass the artist -->
 			<!-- ng-show directive to decide when to show results. In this case, we will show the songs when there
     are songs to show. -->
 			<table ng-show="songs">
-				<thead>
-					<tr>
-						<th>Album Artwork</th>
-						<th>Track</th>
-						<th>Preview&nbsp;</th>
-						<th>Price</th>
-					</tr>
-				</thead>
 				<tbody>
                     <div class="intro-itunes-search">
-                        <div class="row">
-                            <div class="col">
-                                <img class="big-img-itunes"
-						        ng-src="{{songs[0].artworkUrl100}}" alt="{{song.collectionName}}"/>
-                            </div>
-                            <div class="col">
-                                <p class="text-light">{{song.artistName}}</p>
-                            </div>
-                        </div>
+                        <img class="big-img-itunes" ng-src="{{songs[0].artworkUrl100}}" alt="{{song.collectionName}}"/>
+                        <h1 class="text-light pl-3">{{songs[0].artistName}}</h1>
                     </div>
                     
 					<!-- ng-repeat directive to loop over each song in the songs list. -->
@@ -174,17 +159,17 @@ searchiTunes, pass the artist -->
 					<tr ng-repeat="song in songs">
 						<!-- ng-src lets you load imgs when data is present. -->
 					</div>
-						<td>
-							<img
+						<td class="litle-itunes-img">
+							<img 
 								ng-src="{{song.artworkUrl60}}"
 								alt="{{song.collectionName}}"
 							/>
 						</td>
                         <td>{{song.artistName}}</td>
 						<td>{{song.trackName}}</td>
-                        <td>{{song.primaryGenreName}}</td>
-						<td><a href="{{song.previewUrl}}">Play</a></td>
-						<td>{{song.collectionPrice}}</td>
+                        <td class="itunes-genre">{{song.primaryGenreName}}</td>
+						<td class="itunes-play"><a href="{{song.previewUrl}}"><img class="icon-play" src="../img/icons/play.png" alt="icon play"></a></td>
+						<td class="itunes-price">£{{song.collectionPrice}}</td>
 					</tr>
 				</tbody>
 			</table>

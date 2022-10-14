@@ -6,27 +6,39 @@
 
 table {
 	background-color: #2e2d44;
-	display: flex;
-	/* flex-direction: row;
-	justify-content: center; */
 	width: 90%;
 	margin: auto;
+	border-collapse: separate;
 }
 thead {
 	display: none !important;
 }
-.intro-itunes-search {
+.intro-itunes-search,
+tr {
 	margin: auto;
 	width: 90%;
-	/* display: flex;
-	flex-direction: row; */
+	padding-bottom: 30px;
+}
+.intro-itunes-search {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+td.litle-itunes-img,
+td.itunes-price,
+td.itunes-play {
+	width: 5%;
+	color: #ffffff;
+}
+td.itunes-genre {
+	width: 10%;
 }
 td {
-	width: 25%;
+	width: 30%;
 	color: #ffffff;
 }
 .big-img-itunes {
-	width: 40% !important;
+	max-width: 90%;
 	height: 300px;
 }
 .form-search-iTunes {
@@ -37,6 +49,11 @@ td {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+}
+
+.icon-play {
+	width: 30px;
+	height: 30px;
 }
 .input-search-searchPage {
 	width: 85%;
