@@ -121,16 +121,13 @@
 		<main ng-controller="iTunesController">
 			<!-- show an error if there's a search error -->
 			{{ error }}
-			<!-- add form, use ng-submit directive to call
-searchiTunes, pass the artist -->
+			<!-- add form, use ng-submit directive to call searchiTunes, pass the artist -->
 			<form
 				class="form-search-iTunes"
 				name="search"
 				ng-submit="searchiTunes(artist)"
 			>
-				<!-- Artist/band name required, use the ng-model
-    directive to pass the artist name back into the
-    controller/model -->
+				<!-- Artist/band name required, use the ng-model directive to pass the artist name back into the controller/model -->
 				<!-- La entidad &nbsp; (del inglés Non Breaking Space que significa espacio sin ruptura) sirve para representar en HTML un espacio en blanco-->
 				<input
 					class="input-search input-search-searchPage"
@@ -145,13 +142,12 @@ searchiTunes, pass the artist -->
 					value="Search"
 				/>&nbsp;
 			</form>
-			<!-- ng-show directive to decide when to show results. In this case, we will show the songs when there
-    are songs to show. -->
+			<!-- ng-show directive to decide when to show results. In this case, we will show the songs when there are songs to show. -->
 			<table ng-show="songs">
 				<tbody>
-                    <div class="intro-itunes-search">
+                    <div id="intro-itunes-search" class="intro-itunes-search">
                         <img class="big-img-itunes" ng-src="{{songs[0].artworkUrl100}}" alt="{{song.collectionName}}"/>
-                        <h1 class="text-light pl-3">{{songs[0].artistName}}</h1>
+                        <h1 class="text-light pl-3"> {{songs[0].artistName}} </h1>
                     </div>
                     
 					<!-- ng-repeat directive to loop over each song in the songs list. -->
