@@ -123,13 +123,27 @@
 			{{ error }}
 			<!-- add form, use ng-submit directive to call
 searchiTunes, pass the artist -->
-			<form name="search" ng-submit="searchiTunes(artist)">
+			<form
+				class="form-search-iTunes"
+				name="search"
+				ng-submit="searchiTunes(artist)"
+			>
 				<!-- Artist/band name required, use the ng-model
     directive to pass the artist name back into the
     controller/model -->
 				<!-- La entidad &nbsp; (del inglés Non Breaking Space que significa espacio sin ruptura) sirve para representar en HTML un espacio en blanco-->
-				<input type="search" required placeholder="Artist" ng-model="artist" />
-				<input type="submit" value="Search" />&nbsp;
+				<input
+					class="input-search input-search-searchPage"
+					type="search"
+					required
+					placeholder="Artist"
+					ng-model="artist"
+				/>
+				<input
+					class="btn-search-searchPage"
+					type="submit"
+					value="Search"
+				/>&nbsp;
 			</form>
 			<!-- ng-show directive to decide when to show results. In this case, we will show the songs when there
     are songs to show. -->
@@ -143,20 +157,32 @@ searchiTunes, pass the artist -->
 					</tr>
 				</thead>
 				<tbody>
-					<!-- ng-repeat directive to loop over each
-song in the songs list. -->
-					<!-- The song data is loaded into objects for
-easy access. Just call on the attributes
-you need. -->
+                    <div class="intro-itunes-search">
+                        <div class="row">
+                            <div class="col">
+                                <img class="big-img-itunes"
+						        ng-src="{{songs[0].artworkUrl100}}" alt="{{song.collectionName}}"/>
+                            </div>
+                            <div class="col">
+                                <p class="text-light">{{song.artistName}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+					<!-- ng-repeat directive to loop over each song in the songs list. -->
+					<!-- The song data is loaded into objects for easy access. Just call on the attributes you need. -->
 					<tr ng-repeat="song in songs">
 						<!-- ng-src lets you load imgs when data is present. -->
+					</div>
 						<td>
 							<img
 								ng-src="{{song.artworkUrl60}}"
 								alt="{{song.collectionName}}"
 							/>
 						</td>
+                        <td>{{song.artistName}}</td>
 						<td>{{song.trackName}}</td>
+                        <td>{{song.primaryGenreName}}</td>
 						<td><a href="{{song.previewUrl}}">Play</a></td>
 						<td>{{song.collectionPrice}}</td>
 					</tr>
@@ -259,4 +285,19 @@ you need. -->
 		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
 		crossorigin="anonymous"
 	></script>
+
+	<!-- jQuery -->
+	<script src="scripts/jquery-3.0.0.min.js"></script>
+	<script>
+		// $(document).ready(function () {
+		// 	$("#sidebarCollapse").on("click", function () {
+		// 		$("#sidebar").toggleClass("active");
+		// 	});
+		// });
+		$(document).ready(function () {
+			$("#sidebarCollapse").on("click", function () {
+				$("#sidebar").toggleClass("active");
+			});
+		});
+	</script>
 </html>

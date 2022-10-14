@@ -5,5 +5,43 @@
 }
 
 table {
-	background-color: black;
+	background-color: #2e2d44;
+	display: flex;
+	/* flex-direction: row;
+	justify-content: center; */
+	width: 90%;
+	margin: auto;
+}
+thead {
+	display: none !important;
+}
+.intro-itunes-search {
+	margin: auto;
+	width: 90%;
+	/* display: flex;
+	flex-direction: row; */
+}
+td {
+	width: 25%;
+	color: #ffffff;
+}
+.big-img-itunes {
+	width: 40% !important;
+	height: 300px;
+}
+.form-search-iTunes {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	margin: auto;
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.input-search-searchPage {
+	width: 85%;
+	height: 40px;
+}
+.btn-search-searchPage {
+	width: 15%;
 }

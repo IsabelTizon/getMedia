@@ -27,6 +27,7 @@ var iTunesController = function ($scope, $http) {
 		// we will also store just the songs into
 		// a separate variable for the view to iterate
 		$scope.songs = response.data.results;
+		console.log("finding-console", response.data.results);
 	};
 
 	// if there's an error, store that for viewing.

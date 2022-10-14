@@ -15,7 +15,7 @@
 	height: 280px;
 	padding-top: 7%;
 }
-.input-search {
+.input-search-home {
 	padding-top: 80px;
 	padding-bottom: 80px;
 	margin: auto;
@@ -27,7 +27,6 @@
 .input-search-field {
 	width: 100%;
 	height: 40px;
-	padding-left: 10px;
 }
 .btn-search {
 	color: #ffffff !important;
@@ -170,7 +169,6 @@ video {
 	display: flex;
 	flex-direction: row;
 	width: 70%;
-	padding-left: 10px;
 }
 .btn-subscribe {
 	width: 30%;

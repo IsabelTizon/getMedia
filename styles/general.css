@@ -4,10 +4,16 @@
 	word-spacing: 0.1em;
 	letter-spacing: 0.1em;
 }
+html {
+	background-color: #01061e;
+}
 main {
 	padding-top: 100px;
 	padding-left: 80px;
 	background-color: #01061e;
+}
+input.input-search {
+	padding-left: 10px;
 }
 /* navbar start */
 #sidebar {
@@ -77,6 +83,7 @@ footer {
 	background-color: #01061e;
 	display: flex;
 	justify-content: center;
+	padding-top: 80px;
 	padding-left: 80px;
 }
 .title-section-footer {
