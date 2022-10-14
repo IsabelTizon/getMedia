@@ -10,9 +10,14 @@ table {
 	margin: auto;
 	border-collapse: separate;
 }
-thead {
-	display: none !important;
+.btn-search-searchPage {
+	color: #ffffff !important;
+	background-color: #9052bf !important;
+	border-color: #9052bf !important;
 }
+/* thead {
+	display: none !important;
+} */
 .intro-itunes-search,
 tr {
 	margin: auto;
