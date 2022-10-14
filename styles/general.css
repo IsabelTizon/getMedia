@@ -15,6 +15,21 @@ main {
 input.input-search {
 	padding-left: 10px;
 }
+.fake-navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between !important;
+}
+.container-btns-go-next {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.go-back-btns {
+	width: 40px;
+	height: 40px;
+}
 /* navbar start */
 #sidebar {
 	height: 100vh;
