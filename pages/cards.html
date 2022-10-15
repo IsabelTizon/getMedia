@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>contact</title>
+		<title>vouchers</title>
 
 		<!-- CSS Styles -->
 		<link rel="stylesheet" href="../styles/general.css" />
@@ -141,45 +141,40 @@
 		<!-- main section start -->
 		<main>
 			<!-- intro section start -->
-			<section class="intro-pages">
-				<h1 class="title-pages">Have some question?</h1>
+			<section class="intro-pages intro-vouchers">
+				<h1 class="title-pages">Our Vouchers</h1>
 				<h4 class="subtitle-pages">
-					Thank you for your interest in our service. Please fill out the form
-					below and we will get back to you promptly regarding your request.
+					Buy a music car for you and for your friends and listen all the music
+					that you like.
 				</h4>
 			</section>
 			<!-- intro section finish -->
 
 			<!--Content contact start-->
-			<section class="content-contact">
+			<section class="content-contact content-cards">
 				<!--Content contact left start-->
-				<div class="content-contact-left">
-					<img
-						class="img-contact"
-						src="../img/customer-service/customer-service.jpg"
-						alt="contact picture"
-					/>
-					<div class="get-in-touch">
-						<h5 class="get-in-touch-title">Get in touch</h5>
-						<hr class="hr-get-in-touch" />
-						<div class="content-get-in-touch">
-							<div class="content-getMedia-email">
-								<img
-									class="icon-getMedia-email"
-									src="../img/icons/purple-contact.png"
-									alt="icon email"
-								/>
-								<a class="getMedia-email" href="#">getMedia@gmail.com</a>
-							</div>
-							<div class="content-getMedia-map">
-								<img
-									class="icon-getMedia-map"
-									src="../img/icons/purple-map.png"
-									alt="icon map"
-								/>
-								<p class="getMedia-address">
-									221 Baker Street, G56 9TH, Glasgow, Scotland
+				<div class="content-vouchers-left">
+					<div class="card-row">
+						<div class="card music-card-text">
+							<div class="card-body text-center">
+								<p class="card-text-description">
+									Click the card below to add it in your shopping basket
 								</p>
+							</div>
+						</div>
+						<div class="card music-card-5">
+							<div class="card-body text-center">
+								<p class="card-text">£ 5</p>
+							</div>
+						</div>
+						<div class="card music-card-10">
+							<div class="card-body text-center">
+								<p class="card-text">£ 10</p>
+							</div>
+						</div>
+						<div class="card music-card-20">
+							<div class="card-body text-center">
+								<p class="card-text">£ 20</p>
 							</div>
 						</div>
 					</div>
@@ -189,14 +184,14 @@
 				<!--Content contact right start-->
 				<div class="content-contact-right">
 					<!-- Form start -->
-					<form class="form-pages contact-form">
+					<form class="form-pages voucher-form">
 						<!-- name start -->
 						<div class="form-group">
 							<span class="fa fa-user form-control-icon"></span>
 							<input
 								type="text"
 								class="form-control"
-								placeholder="Name"
+								placeholder="Card amount"
 								required
 							/>
 						</div>
@@ -208,17 +203,29 @@
 							<input
 								type="text"
 								class="form-control"
-								placeholder="Surename"
+								placeholder="Quantity"
 								required
 							/>
 						</div>
+						<!-- checkbox start -->
+						<div class="form-group form-check">
+							<input
+								type="checkbox"
+								class="form-check-input"
+								id="exampleCheck1"
+							/>
+							<label class="form-check-label text-light" for="exampleCheck1"
+								>Gift Card</label
+							>
+						</div>
+						<!-- checkbox start -->
 						<!-- phone start -->
 						<div class="form-group">
 							<span class="fa fa-phone form-control-icon"></span>
 							<input
 								type="text"
 								class="form-control"
-								placeholder="Phone"
+								placeholder="To"
 								required
 							/>
 						</div>
@@ -230,7 +237,7 @@
 							<input
 								type="text"
 								class="form-control"
-								placeholder="Email"
+								placeholder="From"
 								required
 							/>
 						</div>
@@ -247,7 +254,7 @@
 						</div>
 						<!-- textarea finish -->
 
-						<button type="submit" class="btn btn-form">Send Message</button>
+						<button type="submit" class="btn btn-form">Add to the card</button>
 					</form>
 					<!-- Form finish -->
 				</div>
