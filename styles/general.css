@@ -93,6 +93,44 @@ input.input-search {
 }
 /*top bar finish */
 
+/* forms start */
+.intro-pages {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+	margin: auto;
+	color: #ffffff;
+	padding-top: 30px;
+}
+.subtitle-pages {
+	font-size: 16px;
+	font-weight: 200;
+	padding-top: 20px;
+}
+form {
+	background-color: #9f97a4;
+	border-radius: 10px;
+	padding: 5%;
+}
+.form-control {
+	background-color: #c7c2cb;
+}
+.btn-form {
+	width: 100%;
+	background-color: #6b22a4 !important;
+	color: #ffffff !important;
+}
+label {
+	margin: 0 !important;
+	font-size: 14px;
+}
+.form-control {
+	margin-bottom: 10px !important;
+}
+/* forms finish */
+
 /* footer start  */
 footer {
 	background-color: #01061e;
