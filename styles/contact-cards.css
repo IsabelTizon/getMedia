@@ -70,6 +70,7 @@
 }
 .card.music-card-text {
 	background-color: #01061e;
+	margin: 0;
 }
 .card-text-description {
 	font-size: 14;
