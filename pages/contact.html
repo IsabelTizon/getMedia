@@ -20,6 +20,12 @@
 		crossorigin="anonymous"
 	/>
 
+	<!-- Font Awesome -->
+	<link
+		rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+	/>
+
 	<!-- Scripts -->
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.js"></script>
 	<!-- the script which will contain the iTunesController -->
@@ -31,7 +37,7 @@
 			<div class="fake-navbar">
 				<img src="../img/logo.svg" alt="logo" />
 				<div class="container-btns-go-next">
-					<a href="#" onclick="history.back()"
+					<a class="pr-2" href="#" onclick="history.back()"
 						><img
 							class="go-back-btns back-btn"
 							src="../img/icons/go.png"
@@ -187,21 +193,20 @@
 					<form class="form-pages contact-form">
 						<!-- name start -->
 						<label for="name">Name</label>
-						<input type="name" class="form-control" id="name" />
+						<input type="name" class="form-control" id="name" required />
 						<!-- name finish -->
 
 						<!-- Surname start -->
 						<label for="Surname">Surname</label>
-						<input type="Surname" class="form-control" id="Surname" />
-						<label for="Surname">Email address</label>
-						<!-- Surname finish -->
-
+						<input type="Surname" class="form-control" id="Surname" required />
 						<!-- phone start -->
+						<label for="Phone">Phone</label>
 						<input
 							type="phone"
 							class="form-control"
 							id="phone"
 							aria-describedby="phone"
+							required
 						/>
 						<!-- phone finish -->
 
@@ -212,6 +217,7 @@
 							class="form-control"
 							id="email"
 							aria-describedby="email"
+							required
 						/>
 						<!-- email finish -->
 						<!-- email start -->

@@ -25,6 +25,7 @@ input.input-search {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	padding-right: 5%;
 }
 .go-back-btns {
 	width: 40px;
