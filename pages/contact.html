@@ -192,40 +192,61 @@
 					<!-- Form start -->
 					<form class="form-pages contact-form">
 						<!-- name start -->
-						<label for="name">Name</label>
-						<input type="name" class="form-control" id="name" required />
+						<div class="form-group">
+							<span class="fa fa-user form-control-icon"></span>
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Name"
+								required
+							/>
+						</div>
 						<!-- name finish -->
 
 						<!-- Surname start -->
-						<label for="Surname">Surname</label>
-						<input type="Surname" class="form-control" id="Surname" required />
+						<div class="form-group">
+							<span class="fa fa-user form-control-icon"></span>
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Surename"
+								required
+							/>
+						</div>
 						<!-- phone start -->
-						<label for="Phone">Phone</label>
-						<input
-							type="phone"
-							class="form-control"
-							id="phone"
-							aria-describedby="phone"
-							required
-						/>
+						<div class="form-group">
+							<span class="fa fa-phone form-control-icon"></span>
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Phone"
+								required
+							/>
+						</div>
 						<!-- phone finish -->
 
 						<!-- email start -->
-						<label for="email">Email address</label>
-						<input
-							type="email"
-							class="form-control"
-							id="email"
-							aria-describedby="email"
-							required
-						/>
-						<!-- email finish -->
-						<!-- email start -->
-						<div class="textarea">
-							<label for="textarea">Message</label>
-							<textarea class="form-control" id="textarea" rows="3"></textarea>
+						<div class="form-group">
+							<span class="fa fa-envelope form-control-icon"></span>
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Email"
+								required
+							/>
 						</div>
 						<!-- email finish -->
+						<!-- textarea start -->
+						<div class="form-group">
+							<span class="fa fa-comment form-control-icon"></span>
+							<textarea
+								class="form-control"
+								id="textarea"
+								placeholder="Textarea"
+								rows="3"
+							></textarea>
+						</div>
+						<!-- textarea finish -->
 
 						<button type="submit" class="btn btn-form">Send Message</button>
 					</form>
