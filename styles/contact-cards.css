@@ -36,6 +36,11 @@
 	flex-direction: row;
 	padding-bottom: 20px;
 }
+.content-getMedia-map {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
 .icon-getMedia-email,
 .icon-getMedia-map {
 	width: 40px;

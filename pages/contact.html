@@ -4,6 +4,30 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- HERE JavaScript Libs & Style Sheets-->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://js.api.here.com/v3/3.1/mapsjs-ui.css"
+		/>
+		<script
+			type="text/javascript"
+			src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"
+		></script>
+
 		<title>contact</title>
 
 		<!-- CSS Styles -->
@@ -26,9 +50,9 @@
 	/>
 
 	<!-- Scripts -->
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.js"></script>
-	<!-- the script which will contain the iTunesController -->
-	<script src="../js/itunes-controler.js"></script>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.js"></script>
+
+	<script src="../js/itunes-controler.js"></script> -->
 
 	<!-- use the ng-controller directive to scope this body to iTunesController -->
 	<body>
@@ -153,14 +177,59 @@
 								<a class="getMedia-email" href="#">getMedia@gmail.com</a>
 							</div>
 							<div class="content-getMedia-map">
-								<img
-									class="icon-getMedia-map"
-									src="../img/icons/purple-map.png"
-									alt="icon map"
-								/>
-								<p class="getMedia-address">
-									221 Baker Street, G56 9TH, Glasgow, Scotland
-								</p>
+								<!-- Button trigger modal -->
+								<button
+									type="button"
+									class="btn btn-getMedia-map"
+									data-toggle="modal"
+									data-target="#staticBackdrop"
+								>
+									<div class="content-getMedia-map">
+										<img
+											class="icon-getMedia-map"
+											src="../img/icons/purple-map.png"
+											alt="icon map"
+										/>
+										<p class="getMedia-address">
+											221 Baker Street, G56 9TH, Glasgow, Scotland
+										</p>
+									</div>
+								</button>
+
+								<!-- Modal -->
+								<div
+									class="modal fade"
+									id="staticBackdrop"
+									data-backdrop="static"
+									data-keyboard="false"
+									tabindex="-1"
+									aria-labelledby="staticBackdropLabel"
+									aria-hidden="true"
+								>
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="staticBackdropLabel">
+													221 Baker Street, G56 9TH, Glasgow, Scotland
+												</h5>
+												<button
+													type="button"
+													class="close"
+													data-dismiss="modal"
+													aria-label="Close"
+												>
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<div
+													style="width: 40vw; height: 70vh"
+													id="mapContainer"
+												></div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -318,32 +387,83 @@
 			</div>
 		</footer>
 		<!-- footer finish -->
-	</body>
-	<!-- Boostrap js-->
-	<script
-		src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"
-	></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-		crossorigin="anonymous"
-	></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-		crossorigin="anonymous"
-	></script>
 
-	<!-- jQuery -->
-	<script src="scripts/jquery-3.0.0.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$("#sidebarCollapse").on("click", function () {
-				$("#sidebar").toggleClass("active");
+		<script>
+			//Step 1: initialize communication with the platform
+			// Replace variable YOUR_API_KEY with your own apikey
+			var platform = new H.service.Platform({
+				apikey: "YdQfvAKHB9bACiRbTq93B5WoGcVzgeRVDYBcwFpT1Ck",
 			});
-		});
-	</script>
-	<script></script>
+			var defaultLayers = platform.createDefaultLayers();
+			//Step 2: initialize a map - this map is centered over Europe
+			var map = new H.Map(
+				document.getElementById("mapContainer"),
+				defaultLayers.vector.normal.map,
+				{
+					center: { lat: 51.5237629, lng: -0.1584743 },
+					zoom: 4,
+					pixelRatio: window.devicePixelRatio || 1,
+				}
+			);
+			// add a resize listener to make sure that the map occupies the whole container
+			window.addEventListener("resize", () => map.getViewPort().resize());
+			//Step 3: make the map interactive
+			// MapEvents enables the event system
+			// Behavior implements default interactions for pan/zoom (also on mobile touch environments)
+			var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+			// Create the default UI components
+			var ui = H.ui.UI.createDefault(map, defaultLayers);
+
+			// Marker code goes here
+			var LocationOfMarker = { lat: 51.5237629, lng: -0.1584743 };
+
+			// optionally - resize a larger PNG image to a specific size
+			var pngIcon = new H.map.Icon("../img/icons/house-map.png", {
+				size: { w: 36, h: 36 },
+			});
+
+			// Create a marker using the previously instantiated icon:
+			var marker = new H.map.Marker(LocationOfMarker, { icon: pngIcon });
+
+			// Add the marker to the map:
+			map.addObject(marker);
+
+			// Optionally,
+			//Show the marker in the center of the map
+			map.setCenter(LocationOfMarker);
+
+			//Zooming so that the marker can be clearly visible
+			map.setZoom(8);
+		</script>
+
+		<!-- Boostrap js-->
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Script map -->
+
+		<!-- jQuery -->
+		<!-- <script src="scripts/jquery-3.0.0.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("#sidebarCollapse").on("click", function () {
+					$("#sidebar").toggleClass("active");
+				});
+			});
+		</script> -->
+	</body>
 </html>
