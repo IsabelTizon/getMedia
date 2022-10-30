@@ -15,6 +15,9 @@
 	height: 280px;
 	padding-top: 7%;
 }
+/*intro section finish */
+
+/*intro-search section start */
 .input-search-home {
 	padding-top: 80px;
 	padding-bottom: 80px;
@@ -33,53 +36,81 @@
 	background-color: #9052bf !important;
 	border-color: #9052bf !important;
 }
-/*intro section finish */
+/*intro-search section finish */
 
-/* Vouchers section start */
-.music-cards-section {
-	background-color: #2e2d449c;
-	width: 90%;
-	margin: auto;
-	padding: 5%;
-}
-.music-cards-text {
+/* Music VOUCHERS Section start */
+.intro-titles {
 	display: flex;
 	flex-direction: column;
-	text-align: center;
-	padding-bottom: 5px;
+	align-items: center;
+	margin-bottom: 40px;
 }
-.title-vouchers {
-	font-size: 35px;
-}
-.subtitle-vouchers {
-	font-size: 20px;
-	text-transform: capitalize !important;
+
+.music-cards-section {
+	width: 80%;
+	margin: auto;
 }
 .text-vouchers {
 	color: #ffffff;
+	margin-bottom: 40px;
+	font-weight: lighter;
+	font-size: 15px;
+}
+/* vouchers */
+.music-cards-section {
+	margin-top: 30px;
+}
+.vouchers-card-deck {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #2e2d44;
+	padding: 30px 40px;
+}
+.card-voucher {
+	width: 80%;
+	margin: 20px;
+	background-color: #01061e !important;
+}
+.card-title-voucher-home {
+	margin-bottom: 15px;
+}
+.card-text-voucher-home {
 	font-weight: lighter;
 	font-size: 14px;
 }
-.music-card-5 {
-	background-color: #6b22a4 !important;
+
+.btn-minus,
+.btn-plus {
+	width: 20px;
+	border: none !important;
+	font-weight: lighter;
 }
-.music-card-10 {
-	background-color: #11b04b !important;
+.bi {
+	color: rgb(255, 255, 255);
 }
-.music-card-20 {
-	background-color: #f539b5 !important;
+.btn-cart-card {
+	width: 80%;
+	background-color: rgb(59, 131, 189) !important;
+	color: rgb(255, 255, 255) !important;
+	border: none !important;
+	letter-spacing: 0;
+	font-size: 10px;
 }
-.card-text {
-	font-weight: bold;
-	font-size: 20px;
+.btn-cart-card:hover {
+	background-color: rgb(90, 4, 144) !important;
 }
-/* Vouchers section finish */
+/* vouchers finish */
+/* Music VOUCHERS Section finish */
 
 /*  Music Cards carousel section start */
 .carousel-section {
-	width: 100%;
-	margin: 0;
-	padding: 30px;
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	width: 80%;
+	margin: auto;
 }
 .music-cards-carousel-title {
 	color: #ffffff;

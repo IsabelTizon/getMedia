@@ -1,3 +1,4 @@
+/* General start */
 * {
 	padding: 0;
 	margin: 0;
@@ -9,90 +10,67 @@ html {
 }
 main {
 	padding-top: 100px;
-	padding-left: 80px;
 	background-color: #01061e;
 }
+.subtitle-page {
+	font-weight: lighter;
+}
+/* General finish */
+
+/* Imputs finish */
 input.input-search {
 	padding-left: 10px;
 }
-.fake-navbar {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between !important;
-}
-.container-btns-go-next {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	padding-right: 5%;
-}
-.go-back-btns {
-	width: 40px;
-	height: 40px;
-}
-/* navbar start */
-#sidebar {
-	height: 100vh;
-	width: 250px;
+/* Imputs finish */
 
-	float: left;
+/* top-navbar start  */
+.top-navbar {
 	position: fixed;
-	overflow-x: hidden;
-	padding-top: 20px;
-	transition: 0.5s;
+	width: 100vw;
+	height: 70px;
 	background-color: #2e2d44;
-	float: left;
-	z-index: 11;
+	z-index: 10;
 }
-/* Shrinking the sidebar from 250px to 80px and center aligining its content*/
-#sidebar.active {
-	min-width: 40px;
-	max-width: 80px;
-	text-align: center;
+.logo {
+	height: 65px;
+	padding-top: 10px;
+	padding-left: 10px;
 }
-
-/* Toggling the sidebar header content, hide the big heading [h3] and showing the small heading [strong] and vice versa*/
-#sidebar .sidebar-header {
-	display: none;
+.btns-nav {
+	margin-top: 20px;
+	margin-left: 50%;
 }
-#sidebar.active .sidebar-header {
-	display: none;
-}
-#sidebar.active .sidebar-header {
-	display: block;
-}
-
-/* #sidebar ul li a {
-	text-align: left;
-} */
-
-#sidebar.active ul li a {
-	padding: 10px 5px;
-	margin-right: 0;
-	display: block;
-	margin-bottom: 5px;
-}
-
 .list-unstyled {
-	padding-top: 40px;
+	margin: 0;
+	align-content: center;
 }
+
 .nav-icon {
 	width: 30px;
 	height: 30px;
+	margin-right: 10px;
 }
-/* navbar finish */
-
-/* top bar start */
-.fake-navbar {
-	position: fixed;
-	width: 100vw;
-	height: 80px;
-	background-color: #2e2d44;
-	padding-left: 80px;
-	z-index: 10;
+.cart {
+	border-radius: 3px #2e2d44;
+	width: 35px;
+	height: 30px;
+	position: relative;
 }
-/*top bar finish */
+.cartAmount {
+	position: absolute;
+	top: -25px;
+	right: -10px;
+	margin-top: 10px;
+	padding: 3px;
+	border-radius: 3px;
+	font-size: 14px;
+	background-color: rgb(255, 0, 0);
+	color: rgb(255, 255, 255);
+}
+.sidebar {
+	display: none;
+}
+/* top-navbar finish  */
 
 /* forms start */
 .intro-pages {
@@ -184,61 +162,48 @@ footer {
 /* footer finish  */
 
 @media (max-width: 768px) {
-	/* 80px and its content aligned to centre. Pushing it off the screen with the
-       negative left margin
-    */
+	/* !sidebar start  */
+	/* navbar start */
+	#sidebar {
+		height: 100%;
+		width: 70px;
+
+		float: left;
+		position: fixed;
+		overflow-x: hidden;
+		margin-top: 70px;
+		transition: 0.5s;
+		background-color: #2e2d44;
+		float: left;
+		z-index: 11;
+	}
+	/* Shrinking the sidebar from 250px to 80px and center aligining its content*/
 	#sidebar.active {
-		min-width: 80px;
+		min-width: 40px;
 		max-width: 80px;
 		text-align: center;
-		margin-left: -80px !important;
 	}
 
-	/* Reappearing the sidebar on toggle button click */
-	#sidebar {
-		margin-left: 0;
-	}
-
-	/* Toggling the sidebar header content, 
-       hide the big heading [h3] and showing the small heading [strong] and vice versa
-    */
-	#sidebar .sidebar-header strong {
+	/* Toggling the sidebar header content, hide the big heading [h3] and showing the small heading [strong] and vice versa*/
+	#sidebar .sidebar-header {
 		display: none;
 	}
-	#sidebar.active .sidebar-header h3 {
+	#sidebar.active .sidebar-header {
 		display: none;
 	}
-	#sidebar.active .sidebar-header strong {
+	#sidebar.active .sidebar-header {
 		display: block;
 	}
 
-	/* Downsize the navigation links font size */
 	#sidebar.active ul li a {
-		padding: 20px 10px;
-		font-size: 0.85em;
-	}
-
-	#sidebar.active ul li a i {
+		padding: 10px 5px;
 		margin-right: 0;
 		display: block;
-		font-size: 1.8em;
 		margin-bottom: 5px;
 	}
 
-	/* Adjust the dropdown links padding*/
-	#sidebar.active ul ul a {
-		padding: 10px !important;
+	.list-unstyled {
+		padding-top: 40px;
 	}
-
-	/* Changing the arrow position to bottom center position, 
-      translateX(50%) works with right: 50% 
-      to accurately  center the arrow */
-	.dropdown-toggle::after {
-		top: auto;
-		bottom: 10px;
-		right: 50%;
-		-webkit-transform: translateX(50%);
-		-ms-transform: translateX(50%);
-		transform: translateX(50%);
-	}
+	/* !sidebar finish  */
 }

@@ -33,110 +33,80 @@
 	<!-- use the ng-controller directive to scope this body to iTunesController -->
 	<body>
 		<header>
-			<div class="fake-navbar">
-				<img src="../img/logo.svg" alt="logo" />
-				<div class="container-btns-go-next">
-					<a class="pr-2" href="#" onclick="history.back()"
-						><img
-							class="go-back-btns back-btn"
-							src="../img/icons/go.png"
-							alt="icon btn go back"
-					/></a>
-					<a href="#" onclick="history.go()"
-						><img
-							class="go-back-btns next-btn"
-							src="../img/icons/go.png"
-							alt="icon btn go back"
-					/></a>
-				</div>
-			</div>
-			<nav id="sidebar" class="active">
-				<div class="navbar navbar-expand-lg">
-					<div class="container-fluid">
-						<a href="#">
-							<img
-								id="sidebarCollapse"
-								class="nav-icon"
-								src="../img/icons/purple-hamburger.png"
-								alt="home icon"
-							/>
-						</a>
+			<!-- TOP NAVBAR START -->
+			<div class="top-navbar">
+				<div class="row">
+					<div class="col">
+						<img class="logo" src="../img/logo.svg" alt="logo" />
+					</div>
+					<div class="col btns-nav">
+						<ul class="list-unstyled">
+							<div class="row">
+								<li>
+									<a href="../pages/search.html">
+										<img
+											class="nav-icon"
+											src="../img/icons/purple-search.png"
+											alt="search icon"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img
+											class="nav-icon"
+											src="../img/icons/purple-library.png"
+											alt="library icon"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img
+											class="nav-icon"
+											src="../img/icons/purple-voucher.png"
+											alt="vouchers icon"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="../pages/contact.html">
+										<img
+											class="nav-icon"
+											src="../img/icons/contact-message.png"
+											alt="contact icon"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="../pages/sign-in.html">
+										<img
+											class="nav-icon"
+											src="../img/icons/account.png"
+											alt="account icon"
+										/>
+									</a>
+								</li>
+								<li class="cart">
+									<a href="../pages/shoppingBasket.html">
+										<img
+											class="nav-icon"
+											src="../img/icons/purple-shopping-cart.png"
+											alt="cart icon"
+										/>
+									</a>
+									<div id="cartAmount" class="cartAmount text-light">0</div>
+								</li>
+							</div>
+						</ul>
 					</div>
 				</div>
+			</div>
+			<!-- TOP NAVBAR FINISH -->
 
-				<ul class="list-unstyled">
-					<li>
-						<a href="#">
-							<img
-								class="nav-icon"
-								src="../img/icons/purple-home.png"
-								alt="home icon"
-							/>
-						</a>
-						<!-- <span class="text-light">Home</span> -->
-					</li>
-					<li>
-						<a href="#">
-							<img
-								class="nav-icon"
-								src="../img/icons/purple-search.png"
-								alt="home icon"
-							/>
-						</a>
-						<!-- <span class="text-light">Search</span> -->
-					</li>
-					<li>
-						<a href="#">
-							<img
-								class="nav-icon"
-								src="../img/icons/purple-library.png"
-								alt="home icon"
-							/>
-						</a>
-						<!-- <span class="text-light">My Library</span> -->
-					</li>
-					<li>
-						<a href="#">
-							<img
-								class="nav-icon"
-								src="../img/icons/purple-voucher.png"
-								alt="home icon"
-							/>
-						</a>
-						<!-- <span class="text-light">Music Cards</span> -->
-					</li>
-					<li>
-						<a href="#">
-							<img
-								class="nav-icon"
-								src="../img/icons/purple-shopping-cart.png"
-								alt="home icon"
-							/>
-						</a>
-						<!-- <span class="text-light">My Shopping Basket</span> -->
-					</li>
-					<li>
-						<a href="#">
-							<img
-								class="nav-icon"
-								src="../img/icons/contact-message.png"
-								alt="home icon"
-							/>
-						</a>
-						<!-- <span class="text-light">Contact</span> -->
-					</li>
-					<li>
-						<a href="#">
-							<img
-								class="nav-icon"
-								src="../img/icons/account.png"
-								alt="home icon"
-							/>
-						</a>
-						<!-- <span class="text-light">My Account</span> -->
-					</li>
-				</ul>
-			</nav>
+			<!-- SIDE NAVBAR START -->
+			<nav id="sidebar" class="active"></nav>
+			<!-- SIDE NAVBAR FINISH -->
 		</header>
 		<!-- main section start -->
 		<main>

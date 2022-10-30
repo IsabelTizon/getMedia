@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>shopping-basket</title>
 
-		<!-- CSS Styles -->
+		<!-- Custom Styles -->
 		<link rel="stylesheet" href="../styles/general.css" />
 		<link
 			rel="stylesheet"
@@ -37,262 +37,96 @@
 	<!-- use the ng-controller directive to scope this body to iTunesController -->
 	<body>
 		<header>
-			<div class="fake-navbar">
-				<img src="../img/logo.svg" alt="logo" />
-				<div class="container-btns-go-next">
-					<a class="pr-2" href="#" onclick="history.back()"
-						><img
-							class="go-back-btns back-btn"
-							src="../img/icons/go.png"
-							alt="icon btn go back"
-					/></a>
-					<a href="#" onclick="history.go()"
-						><img
-							class="go-back-btns next-btn"
-							src="../img/icons/go.png"
-							alt="icon btn go back"
-					/></a>
+			<!-- TOP NAVBAR START -->
+			<div class="top-navbar">
+				<div class="row">
+					<div class="col">
+						<img class="logo" src="../img/logo.svg" alt="logo" />
+					</div>
+					<div class="col btns-nav">
+						<ul class="list-unstyled">
+							<div class="row">
+								<li>
+									<a href="../pages/search.html">
+										<img
+											class="nav-icon"
+											src="../img/icons/purple-search.png"
+											alt="search icon"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img
+											class="nav-icon"
+											src="../img/icons/purple-library.png"
+											alt="library icon"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img
+											class="nav-icon"
+											src="../img/icons/purple-voucher.png"
+											alt="vouchers icon"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="../pages/contact.html">
+										<img
+											class="nav-icon"
+											src="../img/icons/contact-message.png"
+											alt="contact icon"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="../pages/sign-in.html">
+										<img
+											class="nav-icon"
+											src="../img/icons/account.png"
+											alt="account icon"
+										/>
+									</a>
+								</li>
+								<li class="cart">
+									<a href="../pages/shoppingBasket.html">
+										<img
+											class="nav-icon"
+											src="../img/icons/purple-shopping-cart.png"
+											alt="cart icon"
+										/>
+									</a>
+									<div id="cartAmount" class="cartAmount text-light">0</div>
+								</li>
+							</div>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<nav id="sidebar" class="active">
-				<div class="navbar navbar-expand-lg">
-					<div class="container-fluid">
-						<a href="#">
-							<img
-								id="sidebarCollapse"
-								class="nav-icon"
-								src="../img/icons/purple-hamburger.png"
-								alt="home icon"
-							/>
-						</a>
-					</div>
-				</div>
+			<!-- TOP NAVBAR FINISH -->
 
-				<ul class="list-unstyled">
-					<li>
-						<a href="#">
-							<img
-								class="nav-icon"
-								src="../img/icons/purple-home.png"
-								alt="home icon"
-							/>
-						</a>
-						<!-- <span class="text-light">Home</span> -->
-					</li>
-					<li>
-						<a href="#">
-							<img
-								class="nav-icon"
-								src="../img/icons/purple-search.png"
-								alt="home icon"
-							/>
-						</a>
-						<!-- <span class="text-light">Search</span> -->
-					</li>
-					<li>
-						<a href="#">
-							<img
-								class="nav-icon"
-								src="../img/icons/purple-library.png"
-								alt="home icon"
-							/>
-						</a>
-						<!-- <span class="text-light">My Library</span> -->
-					</li>
-					<li>
-						<a href="#">
-							<img
-								class="nav-icon"
-								src="../img/icons/purple-voucher.png"
-								alt="home icon"
-							/>
-						</a>
-						<!-- <span class="text-light">Music Cards</span> -->
-					</li>
-					<li>
-						<a href="#">
-							<img
-								class="nav-icon"
-								src="../img/icons/purple-shopping-cart.png"
-								alt="home icon"
-							/>
-						</a>
-						<!-- <span class="text-light">My Shopping Basket</span> -->
-					</li>
-					<li>
-						<a href="#">
-							<img
-								class="nav-icon"
-								src="../img/icons/contact-message.png"
-								alt="home icon"
-							/>
-						</a>
-						<!-- <span class="text-light">Contact</span> -->
-					</li>
-					<li>
-						<a href="#">
-							<img
-								class="nav-icon"
-								src="../img/icons/account.png"
-								alt="home icon"
-							/>
-						</a>
-						<!-- <span class="text-light">My Account</span> -->
-					</li>
-				</ul>
-			</nav>
+			<!-- SIDE NAVBAR START -->
+			<nav id="sidebar" class="active"></nav>
+			<!-- SIDE NAVBAR FINISH -->
 		</header>
-		<!-- main section start -->
-		<main>
-			<!-- intro section start -->
-			<section class="intro-pages intro-vouchers">
-				<h1 class="title-pages">Shopping Basket</h1>
-			</section>
-			<!-- intro section finish -->
+		<!-- Main start -->
+		<main class="cart-page">
+			<div class="title-basket">
+				<h1>Shopping Basket</h1>
+			</div>
 
+			<div id="label" class="label"></div>
 			<!--Content basket start-->
-			<section class="content-contact content-basket">
-				<!--Content contact left start-->
-				<div class="content-basket-left">
-					<div class="card">
-						<div class="row align-items-center">
-							<div class="col justify-content-center">
-								<div class="row">
-									<div class="card music-card-5">
-										<div class="card-body text-center">
-											<p class="card-text">£ 5</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col justify-content-center">
-								<a class="text-light" href="#">-</a
-								><a class="text-light" href="#" class="border">0</a
-								><a class="text-light" href="#">+</a>
-							</div>
-							<div class="col">
-								<span class="fa fa-trash form-control-icon"></span>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="row align-items-center">
-							<div class="col">
-								<div class="row">
-									<div class="card music-card-10">
-										<div class="card-body text-center">
-											<p class="card-text">£ 10</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col">
-								<a class="text-light" href="#">-</a
-								><a class="text-light" href="#" class="border">0</a
-								><a class="text-light" href="#">+</a>
-							</div>
-							<div class="col">
-								<span class="fa fa-trash form-control-icon"></span>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="row align-items-center">
-							<div class="col">
-								<div class="row">
-									<div class="card music-card-20">
-										<div class="card-body text-center">
-											<p class="card-text">£ 20</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col">
-								<a class="text-light" href="#">-</a
-								><a class="text-light" href="#" class="border">0</a
-								><a class="text-light" href="#">+</a>
-							</div>
-							<div class="col">
-								<span class="fa fa-trash form-control-icon"></span>
-							</div>
-						</div>
-					</div>
-					<div class="back-to-shop">
-						<a href="#">&leftarrow;</a
-						><span class="text-light p-lg-2">Back to shop</span>
-					</div>
-				</div>
-
-				<!--Content basket left finish -->
-
-				<!--Content basket right start-->
-				<div class="content-basket-right">
-					<!-- Form start -->
-					<form class="form-pages voucher-form">
-						<!-- name start -->
-						<div class="form-group">
-							<span class="fa fa-user form-control-icon"></span>
-							<input
-								type="text"
-								class="form-control"
-								placeholder="Cardholder's Name"
-								required
-							/>
-						</div>
-						<!-- name finish -->
-
-						<!-- Surname start -->
-						<div class="form-group">
-							<span class="fa fa-credit-card-alt form-control-icon"></span>
-							<input
-								type="text"
-								class="form-control"
-								placeholder="Card Number"
-								required
-							/>
-						</div>
-						<div class="row">
-							<div class="col">
-								<!-- phone start -->
-								<div class="form-group">
-									<span class="fa fa-calendar form-control-icon"></span>
-									<input
-										type="text"
-										class="form-control"
-										placeholder="Expiration"
-										required
-									/>
-								</div>
-								<!-- phone finish -->
-							</div>
-							<div class="col">
-								<!-- phone start -->
-								<div class="form-group">
-									<input
-										type="text"
-										class="form-control"
-										placeholder="CVV"
-										required
-									/>
-								</div>
-								<!-- phone finish -->
-							</div>
-						</div>
-						<hr class="subtotal-basket" />
-						<div class="row">
-							<div class="col">Subtotal</div>
-							<div class="col total-basket">&#8356;</div>
-						</div>
-
-						<button type="submit" class="btn btn-form">Check out</button>
-					</form>
-					<!-- Form finish -->
-				</div>
-			</section>
-			<!--Content contact right finish -->
-			<!--Content contact finish -->
+			<div class="cart-section">
+				<div id="shoppingCart" class="shopping-cart"></div>
+			</div>
+			<!--Content basket finish -->
 		</main>
-		<!-- main section finish -->
+		<!-- Main finish -->
+
 		<!-- footer start -->
 		<footer>
 			<div class="container container-footer p-0">
@@ -375,22 +209,10 @@
 		</footer>
 		<!-- footer finish -->
 	</body>
-	<!-- Boostrap js-->
-	<script
-		src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"
-	></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-		crossorigin="anonymous"
-	></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-		crossorigin="anonymous"
-	></script>
+
+	<!-- custom js -->
+	<script src="../js/data.js"></script>
+	<script src="../js/shopping-basket.js"></script>
 
 	<!-- jQuery -->
 	<script src="scripts/jquery-3.0.0.min.js"></script>
@@ -401,5 +223,4 @@
 			});
 		});
 	</script>
-	<script></script>
 </html>
