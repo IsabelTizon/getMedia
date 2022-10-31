@@ -34,76 +34,63 @@
 	<body>
 		<header>
 			<!-- TOP NAVBAR START -->
-			<div class="top-navbar">
-				<div class="row">
-					<div class="col">
-						<a href="#">
-							<img class="logo" src="../img/logo.svg" alt="logo" />
-						</a>
-					</div>
-					<div class="col btns-nav">
-						<ul class="list-unstyled">
-							<div class="row">
-								<li>
-									<a href="../pages/search.html">
-										<img
-											class="nav-icon"
-											src="../img/icons/purple-search.png"
-											alt="search icon"
-										/>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img
-											class="nav-icon"
-											src="../img/icons/purple-library.png"
-											alt="library icon"
-										/>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img
-											class="nav-icon"
-											src="../img/icons/purple-voucher.png"
-											alt="vouchers icon"
-										/>
-									</a>
-								</li>
-								<li>
-									<a href="../pages/contact.html">
-										<img
-											class="nav-icon"
-											src="../img/icons/contact-message.png"
-											alt="contact icon"
-										/>
-									</a>
-								</li>
-								<li>
-									<a href="../pages/sign-in.html">
-										<img
-											class="nav-icon"
-											src="../img/icons/account.png"
-											alt="account icon"
-										/>
-									</a>
-								</li>
-								<li class="cart">
-									<a href="../pages/shoppingBasket.html">
-										<img
-											class="nav-icon"
-											src="../img/icons/purple-shopping-cart.png"
-											alt="cart icon"
-										/>
-									</a>
-									<div id="cartAmount" class="cartAmount text-light">0</div>
-								</li>
-							</div>
-						</ul>
-					</div>
+			<nav class="navbar fixed-top navbar-expand-lg top-navbar">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a href="../pages/home.html">
+					<img class="logo" src="../img/logo.svg" alt="logo" />
+				</a>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active ml-3">
+							<a class="nav-link pt-1" href="../pages/home.html">
+								<i class="bix4 bi-house-door nav-icon"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link pt-1" href="../pages/search.html">
+								<i class="bi bi-search nav-icon"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link pt-1" href="../pages/cards.html">
+								<i class="bi bi-file-music nav-icon"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link pt-1" href="../pages/contact.html">
+								<i class="bi bi-chat-square-text nav-icon"></i>
+							</a>
+						</li>
+					</ul>
 				</div>
-			</div>
+				<div class="navbar-expand-lg">
+					<ul class="navbar-nav mr-end mr-4 d-flex flex-row">
+						<li class="nav-item">
+							<a class="nav-link pt-1" href="../pages/sign-in.html">
+								<i class="bi bi-person nav-icon"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link pt-1 cart" href="../pages/shoppingBasket.html">
+								<i class="bi bi-cart nav-icon"></i>
+							</a>
+							<div id="cartAmount" class="cartAmount text-light">0</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
 			<!-- TOP NAVBAR FINISH -->
 
 			<!-- SIDE NAVBAR START -->

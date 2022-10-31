@@ -32,34 +32,28 @@ input.input-search {
 	z-index: 10;
 }
 .logo {
-	height: 65px;
+	max-height: 65px;
 	padding-top: 10px;
-	padding-left: 10px;
-}
-.btns-nav {
-	margin-top: 20px;
-	margin-left: 50%;
-}
-.list-unstyled {
-	margin: 0;
-	align-content: center;
+	margin-left: 10%;
 }
 
+.nav-item {
+	width: 40px;
+	height: 40px;
+}
 .nav-icon {
-	width: 30px;
-	height: 30px;
 	margin-right: 10px;
+	color: #eadbf6;
+	font-size: 25px;
 }
 .cart {
 	border-radius: 3px #2e2d44;
-	width: 35px;
-	height: 30px;
 	position: relative;
 }
 .cartAmount {
 	position: absolute;
-	top: -25px;
-	right: -10px;
+	top: -3px;
+	right: 25px;
 	margin-top: 10px;
 	padding: 3px;
 	border-radius: 3px;
@@ -69,6 +63,9 @@ input.input-search {
 }
 .sidebar {
 	display: none;
+}
+.navbar-toggler {
+	width: 50px;
 }
 /* top-navbar finish  */
 
@@ -130,7 +127,6 @@ footer {
 	display: flex;
 	justify-content: center;
 	padding-top: 80px;
-	padding-left: 80px;
 }
 .title-section-footer {
 	color: #ffffff;
@@ -160,50 +156,3 @@ footer {
 	background-color: #2e2d44;
 }
 /* footer finish  */
-
-@media (max-width: 768px) {
-	/* !sidebar start  */
-	/* navbar start */
-	#sidebar {
-		height: 100%;
-		width: 70px;
-
-		float: left;
-		position: fixed;
-		overflow-x: hidden;
-		margin-top: 70px;
-		transition: 0.5s;
-		background-color: #2e2d44;
-		float: left;
-		z-index: 11;
-	}
-	/* Shrinking the sidebar from 250px to 80px and center aligining its content*/
-	#sidebar.active {
-		min-width: 40px;
-		max-width: 80px;
-		text-align: center;
-	}
-
-	/* Toggling the sidebar header content, hide the big heading [h3] and showing the small heading [strong] and vice versa*/
-	#sidebar .sidebar-header {
-		display: none;
-	}
-	#sidebar.active .sidebar-header {
-		display: none;
-	}
-	#sidebar.active .sidebar-header {
-		display: block;
-	}
-
-	#sidebar.active ul li a {
-		padding: 10px 5px;
-		margin-right: 0;
-		display: block;
-		margin-bottom: 5px;
-	}
-
-	.list-unstyled {
-		padding-top: 40px;
-	}
-	/* !sidebar finish  */
-}

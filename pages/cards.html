@@ -7,6 +7,9 @@
 		<title>vouchers</title>
 
 		<!-- CSS Styles -->
+		<link rel="stylesheet" href="../styles/home.css" />
+		<link rel="stylesheet" href="./styles/shoppingBasket.css" />
+		<link rel="stylesheet" href="../styles/general.css" />
 		<link rel="stylesheet" href="../styles/general.css" />
 		<link rel="stylesheet" type="text/css" href="../styles/contact-cards.css" />
 	</head>
@@ -18,6 +21,10 @@
 		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
 		crossorigin="anonymous"
 	/>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+	/>
 
 	<!-- Font Awesome -->
 	<link
@@ -26,221 +33,169 @@
 	/>
 
 	<!-- Scripts -->
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.js"></script>
-	<!-- the script which will contain the iTunesController -->
-	<script src="../js/itunes-controler.js"></script>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.js"></script>
+
+	<script src="../js/itunes-controler.js"></script> -->
 
 	<!-- use the ng-controller directive to scope this body to iTunesController -->
 	<body>
 		<header>
 			<!-- TOP NAVBAR START -->
-			<div class="top-navbar">
-				<div class="row">
-					<div class="col">
-						<a href="../pages/home.html">
-							<img class="logo" src="../img/logo.svg" alt="logo" />
-						</a>
-					</div>
-					<div class="col btns-nav">
-						<ul class="list-unstyled">
-							<div class="row">
-								<li>
-									<a href="#">
-										<img
-											class="nav-icon"
-											src="../img/icons/purple-home.png"
-											alt="home icon"
-										/>
-									</a>
-									<!-- <span class="text-light">Home</span> -->
-								</li>
-								<li>
-									<a href="../pages/search.html">
-										<img
-											class="nav-icon"
-											src="../img/icons/purple-search.png"
-											alt="search icon"
-										/>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img
-											class="nav-icon"
-											src="../img/icons/purple-library.png"
-											alt="library icon"
-										/>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img
-											class="nav-icon"
-											src="../img/icons/purple-voucher.png"
-											alt="vouchers icon"
-										/>
-									</a>
-								</li>
-								<li>
-									<a href="../pages/contact.html">
-										<img
-											class="nav-icon"
-											src="../img/icons/contact-message.png"
-											alt="contact icon"
-										/>
-									</a>
-								</li>
-								<li>
-									<a href="../pages/sign-in.html">
-										<img
-											class="nav-icon"
-											src="../img/icons/account.png"
-											alt="account icon"
-										/>
-									</a>
-								</li>
-								<li class="cart">
-									<a href="../pages/shoppingBasket.html">
-										<img
-											class="nav-icon"
-											src="../img/icons/purple-shopping-cart.png"
-											alt="cart icon"
-										/>
-									</a>
-									<div id="cartAmount" class="cartAmount text-light">0</div>
-								</li>
-							</div>
-						</ul>
-					</div>
+			<nav class="navbar fixed-top navbar-expand-lg top-navbar">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a href="../pages/home.html">
+					<img class="logo" src="../img/logo.svg" alt="logo" />
+				</a>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active ml-3">
+							<a class="nav-link pt-1" href="../pages/home.html">
+								<i class="bix4 bi-house-door nav-icon"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link pt-1" href="../pages/search.html">
+								<i class="bi bi-search nav-icon"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link pt-1" href="../pages/cards.html">
+								<i class="bi bi-file-music nav-icon"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link pt-1" href="../pages/contact.html">
+								<i class="bi bi-chat-square-text nav-icon"></i>
+							</a>
+						</li>
+					</ul>
 				</div>
-			</div>
+				<div class="navbar-expand-lg">
+					<ul class="navbar-nav mr-end mr-4 d-flex flex-row">
+						<li class="nav-item">
+							<a class="nav-link pt-1" href="../pages/sign-in.html">
+								<i class="bi bi-person nav-icon"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link pt-1 cart" href="../pages/shoppingBasket.html">
+								<i class="bi bi-cart nav-icon"></i>
+							</a>
+							<div id="cartAmount" class="cartAmount text-light">0</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
 			<!-- TOP NAVBAR FINISH -->
 
 			<!-- SIDE NAVBAR START -->
 			<nav id="sidebar" class="active"></nav>
 			<!-- SIDE NAVBAR FINISH -->
 		</header>
+
 		<!-- main section start -->
 		<main>
-			<!-- intro section start -->
-			<section class="intro-pages intro-vouchers">
-				<h1 class="title-pages">Our Vouchers</h1>
-				<h4 class="subtitle-pages">
-					Buy a music car for you and for your friends and listen all the music
-					that you like.
-				</h4>
-			</section>
-			<!-- intro section finish -->
-
-			<!--Content contact start-->
-			<section class="content-contact content-cards">
-				<!--Content contact left start-->
-				<div class="content-vouchers-left">
-					<div class="card-row">
-						<div class="card music-card-text">
-							<div class="card-body text-center">
-								<p class="card-text-description">
-									Click the card below to add it in your shopping basket
-								</p>
-							</div>
-						</div>
-						<div class="card music-card-5">
-							<div class="card-body text-center">
-								<p class="card-text">£ 5</p>
-							</div>
-						</div>
-						<div class="card music-card-10">
-							<div class="card-body text-center">
-								<p class="card-text">£ 10</p>
-							</div>
-						</div>
-						<div class="card music-card-20">
-							<div class="card-body text-center">
-								<p class="card-text">£ 20</p>
-							</div>
-						</div>
+			<!-- Music VOUCHERS Section start -->
+			<div class="music-cards-section">
+				<div class="music-cards-text">
+					<div class="intro-titles">
+						<h1 class="title-page text-light">Our Vouchers</h1>
+						<h3 class="subtitle-page text-light">
+							The music card vouchers and your gitf cards bellow.
+						</h3>
 					</div>
+					<p class="text-vouchers">
+						Buy a music car for you and for your friends and listen all the
+						music that you like.
+					</p>
 				</div>
-				<!--Content contact left finish -->
+				<div id="vouchersCardDeck" class="vouchers-card-deck"></div>
+			</div>
+			<!-- Music Vouchers Section finish -->
+			<!--Content contact right start-->
+			<div class="content-contact-right">
+				<!-- Form start -->
+				<form class="form-pages voucher-form">
+					<!-- name start -->
+					<div class="form-group">
+						<span class="fa fa-user form-control-icon"></span>
+						<input
+							type="text"
+							class="form-control"
+							placeholder="Card amount"
+							required
+						/>
+					</div>
+					<!-- name finish -->
 
-				<!--Content contact right start-->
-				<div class="content-contact-right">
-					<!-- Form start -->
-					<form class="form-pages voucher-form">
-						<!-- name start -->
-						<div class="form-group">
-							<span class="fa fa-user form-control-icon"></span>
-							<input
-								type="text"
-								class="form-control"
-								placeholder="Card amount"
-								required
-							/>
-						</div>
-						<!-- name finish -->
+					<!-- Surname start -->
+					<div class="form-group">
+						<span class="fa fa-user form-control-icon"></span>
+						<input
+							type="text"
+							class="form-control"
+							placeholder="Quantity"
+							required
+						/>
+					</div>
+					<!-- checkbox start -->
+					<div class="form-group form-check">
+						<input
+							type="checkbox"
+							class="form-check-input"
+							id="exampleCheck1"
+						/>
+						<label class="form-check-label text-light" for="exampleCheck1"
+							>Gift Card</label
+						>
+					</div>
+					<!-- checkbox start -->
+					<!-- phone start -->
+					<div class="form-group">
+						<span class="fa fa-phone form-control-icon"></span>
+						<input type="text" class="form-control" placeholder="To" required />
+					</div>
+					<!-- phone finish -->
 
-						<!-- Surname start -->
-						<div class="form-group">
-							<span class="fa fa-user form-control-icon"></span>
-							<input
-								type="text"
-								class="form-control"
-								placeholder="Quantity"
-								required
-							/>
-						</div>
-						<!-- checkbox start -->
-						<div class="form-group form-check">
-							<input
-								type="checkbox"
-								class="form-check-input"
-								id="exampleCheck1"
-							/>
-							<label class="form-check-label text-light" for="exampleCheck1"
-								>Gift Card</label
-							>
-						</div>
-						<!-- checkbox start -->
-						<!-- phone start -->
-						<div class="form-group">
-							<span class="fa fa-phone form-control-icon"></span>
-							<input
-								type="text"
-								class="form-control"
-								placeholder="To"
-								required
-							/>
-						</div>
-						<!-- phone finish -->
+					<!-- email start -->
+					<div class="form-group">
+						<span class="fa fa-envelope form-control-icon"></span>
+						<input
+							type="text"
+							class="form-control"
+							placeholder="From"
+							required
+						/>
+					</div>
+					<!-- email finish -->
+					<!-- textarea start -->
+					<div class="form-group">
+						<span class="fa fa-comment form-control-icon"></span>
+						<textarea
+							class="form-control"
+							id="textarea"
+							placeholder="Message"
+							rows="3"
+						></textarea>
+					</div>
+					<!-- textarea finish -->
 
-						<!-- email start -->
-						<div class="form-group">
-							<span class="fa fa-envelope form-control-icon"></span>
-							<input
-								type="text"
-								class="form-control"
-								placeholder="From"
-								required
-							/>
-						</div>
-						<!-- email finish -->
-						<!-- textarea start -->
-						<div class="form-group">
-							<span class="fa fa-comment form-control-icon"></span>
-							<textarea
-								class="form-control"
-								id="textarea"
-								placeholder="Message"
-								rows="3"
-							></textarea>
-						</div>
-						<!-- textarea finish -->
-
-						<button type="submit" class="btn btn-form">Add to the card</button>
-					</form>
-					<!-- Form finish -->
-				</div>
-			</section>
+					<button type="submit" class="btn btn-form">Add to the card</button>
+				</form>
+				<!-- Form finish -->
+			</div>
 			<!--Content contact right finish -->
 			<!--Content contact finish -->
 		</main>
@@ -327,6 +282,11 @@
 		</footer>
 		<!-- footer finish -->
 	</body>
+
+	<!-- custom js -->
+	<script src="../js/data.js"></script>
+	<script src="../js/home.js"></script>
+
 	<!-- Boostrap js-->
 	<script
 		src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -345,13 +305,12 @@
 	></script>
 
 	<!-- jQuery -->
-	<script src="scripts/jquery-3.0.0.min.js"></script>
+	<!-- <script src="scripts/jquery-3.0.0.min.js"></script>
 	<script>
 		$(document).ready(function () {
 			$("#sidebarCollapse").on("click", function () {
 				$("#sidebar").toggleClass("active");
 			});
 		});
-	</script>
-	<script></script>
+	</script> -->
 </html>
