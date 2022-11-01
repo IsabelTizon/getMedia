@@ -46,6 +46,7 @@ function gettingDetails(inputName, inputpassword) {
 
 			let rederingInputName = () => {
 				console.log(rederingInputName);
+
 				return (document.getElementById("userNameNav").innerHTML = inputName);
 			};
 
