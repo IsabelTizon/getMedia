@@ -43,6 +43,13 @@ function gettingDetails(inputName, inputpassword) {
 
 		if (userDetailsArrayFound()) {
 			window.location.href = "home.html";
+
+			let rederingInputName = () => {
+				console.log(rederingInputName);
+				return (document.getElementById("userNameNav").innerHTML = inputName);
+			};
+
+			rederingInputName();
 		} else {
 			alert("wrong details, try again");
 		}

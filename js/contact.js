@@ -1,5 +1,3 @@
-// const form = document.querySelector(".form");
-
 const btn = document.getElementById("submit");
 console.log(btn); // 👉️ null
 
