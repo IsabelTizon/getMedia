@@ -42,16 +42,13 @@ function gettingDetails(inputName, inputpassword) {
 		}
 
 		if (userDetailsArrayFound()) {
+			// a new key was created in the localStorage  with the inpunt name that was inserted by the user and is keep it like a string value.
+			localStorage.setItem("userLogged", JSON.stringify(inputName));
+
+			//redirection to the home page if the user details (name  and password) were found
 			window.location.href = "home.html";
-
-			let rederingInputName = () => {
-				console.log(rederingInputName);
-
-				return (document.getElementById("userNameNav").innerHTML = inputName);
-			};
-
-			rederingInputName();
 		} else {
+			//if the details
 			alert("wrong details, try again");
 		}
 	}
