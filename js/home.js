@@ -151,3 +151,8 @@ let calculation = () => {
 // every time the page is load the calculation will be done and the amount of items appear in pur basket
 // Here I run the function
 calculation();
+
+//Rediret to search page
+document.getElementById("goToSearch").onclick = function () {
+	location.href = "search.html";
+};

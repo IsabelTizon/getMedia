@@ -166,3 +166,63 @@ footer {
 	background-color: #2e2d44;
 }
 /* footer finish  */
+/* !Media Quey phone starts */
+@media screen and (max-width: 360px) {
+	/* top-navbar start  */
+	navbar .logo {
+		max-height: 60px;
+		padding-top: 5px;
+		margin-left: 0;
+	}
+
+	.nav-item {
+		width: 40px;
+		height: 40px;
+	}
+	.nav-icon {
+		margin-right: 10px;
+		color: #eadbf6;
+		font-size: 25px;
+	}
+	.nav-item-userName {
+		display: flex;
+		justify-content: center;
+		align-items: center !important;
+		width: 70px !important;
+	}
+	#userNameNav {
+		margin-top: 10px;
+		color: #eadbf6;
+	}
+	.cart {
+		border-radius: 3px #2e2d44;
+		position: relative;
+	}
+	.cartAmount {
+		position: absolute;
+		top: -3px;
+		right: 25px;
+		margin-top: 10px;
+		padding: 3px;
+		border-radius: 3px;
+		font-size: 14px;
+		background-color: rgb(255, 0, 0);
+		color: rgb(255, 255, 255);
+	}
+	.sidebar {
+		display: none;
+	}
+	.navbar-toggler {
+		width: 50px;
+	}
+}
+/* !Media Quey phone finish */
+
+/* !Media Quey tablet starts */
+@media screen and (max-width: 360px) {
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+}
+/* !Media Quey tablet finish */

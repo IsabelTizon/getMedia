@@ -3,6 +3,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin-bottom: 150px;
 }
 .title-intro {
 	font-size: 65px;
@@ -17,26 +18,59 @@
 }
 /*intro section finish */
 
-/*intro-search section start */
-.input-search-home {
-	padding-top: 80px;
-	padding-bottom: 80px;
-	margin: auto;
-	width: 70%;
+/*Your Music section start */
+.yourMusic {
 	display: flex;
 	flex-direction: row;
+	width: 90%;
+	margin: auto;
+	background-color: #2e2d44;
+	border-radius: 0.5rem;
+	margin-bottom: 100px;
+}
+.text-section-videos {
+	color: #ffffff;
+	width: 80%;
+	margin: 50px auto;
+	font-weight: lighter;
+
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 }
-.input-search-field {
-	width: 100%;
-	height: 40px;
+.middleElements {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section-videos {
+	flex-wrap: wrap;
+	width: 50%;
+	margin-top: 50px;
+}
+
+.section-videos video {
+	position: relative;
+	margin-top: 8px;
+	vertical-align: middle;
+}
+.video-horizontal {
+	width: 42%;
+	height: 100px;
+}
+.video-vertical {
+	width: 20%;
+	height: 160px;
 }
 .btn-search {
 	color: #ffffff !important;
 	background-color: #9052bf !important;
 	border-color: #9052bf !important;
 }
-/*intro-search section finish */
+/*Your Music section finish */
 
 /* Music VOUCHERS Section start */
 .intro-titles {
@@ -58,7 +92,7 @@
 }
 /* vouchers */
 .music-cards-section {
-	margin-top: 30px;
+	margin-bottom: 100px;
 }
 .vouchers-card-deck {
 	display: flex;
@@ -111,6 +145,7 @@
 	justify-content: center;
 	width: 80%;
 	margin: auto;
+	margin-bottom: 40px;
 }
 .music-cards-carousel-title {
 	color: #ffffff;
@@ -232,3 +267,17 @@ button:hover {
 /* Newsletter section finish */
 
 /* main finish  */
+
+/* !Media Quey phone starts */
+@media screen and (max-width: 360px) {
+}
+/* !Media Quey phone finish */
+
+/* !Media Quey phone starts */
+@media screen and (max-width: 360px) {
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+}
+/* !Media Quey phone finish */
