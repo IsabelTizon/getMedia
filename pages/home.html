@@ -33,8 +33,8 @@
 	</head>
 	<body>
 		<header>
-			<!-- TOP NAVBAR START -->
-			<nav id="topNavbar" class="navbar fixed-top navbar-expand-lg top-navbar">
+			<!-- RESPONSIVE NAVBAR START -->
+			<nav class="navbar fixed-top navbar-expand-lg top-navbar">
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -44,7 +44,9 @@
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"
+						><i class="bi bi-list nav-icon"></i
+					></span>
 				</button>
 				<a href="../pages/home.html">
 					<img class="logo" src="../img/logo.svg" alt="logo" />
@@ -52,30 +54,42 @@
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active ml-3">
+						<li class="nav-item active nav-item-home">
 							<a class="nav-link pt-1" href="../pages/home.html">
-								<i class="bix4 bi-house-door nav-icon"></i>
+								<div class="container-link-nav-collapse">
+									<i class="bix4 bi-house-door nav-icon"></i>
+									<span class="text-link-nav">Home</span>
+								</div>
 							</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link pt-1" href="../pages/search.html">
-								<i class="bi bi-search nav-icon"></i>
+								<div class="container-link-nav-collapse">
+									<i class="bi bi-search nav-icon"></i>
+									<span class="text-link-nav">Search</span>
+								</div>
 							</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link pt-1" href="../pages/cards.html">
-								<i class="bi bi-file-music nav-icon"></i>
+								<div class="container-link-nav-collapse">
+									<i class="bi bi-file-music nav-icon"></i>
+									<span class="text-link-nav">Cards</span>
+								</div>
 							</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link pt-1" href="../pages/contact.html">
-								<i class="bi bi-chat-square-text nav-icon"></i>
+								<div class="container-link-nav-collapse">
+									<i class="bi bi-chat-square-text nav-icon"></i>
+									<span class="text-link-nav">Contact</span>
+								</div>
 							</a>
 						</li>
 					</ul>
 				</div>
 				<div class="navbar-expand-lg">
-					<ul class="navbar-nav mr-end mr-4 d-flex flex-row">
+					<ul class="navbar-nav mr-auto d-flex flex-row">
 						<li class="nav-item nav-item-userName">
 							<span id="userNameNav"></span>
 						</li>
@@ -84,69 +98,11 @@
 								<i class="bi bi-person nav-icon"></i>
 							</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item nav-item-cart">
 							<a class="nav-link pt-1 cart" href="../pages/shoppingBasket.html">
 								<i class="bi bi-cart nav-icon"></i>
 							</a>
 							<div id="cartAmount" class="cartAmount text-light">0</div>
-						</li>
-					</ul>
-				</div>
-			</nav>
-			<!-- TOP NAVBAR FINISH -->
-
-			<!-- RESPONSIVE NAVBAR START -->
-			<nav id="sideNavbar" class="navbar fixed-top navbar-expand-lg top-navbar">
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<a href="../pages/home.html">
-					<img class="logo" src="../img/logo.svg" alt="logo" />
-				</a>
-				<a class="nav-link pt-1 cart" href="../pages/shoppingBasket.html">
-					<i class="bi bi-cart nav-icon"></i>
-				</a>
-				<div id="cartAmount" class="cartAmount text-light">0</div>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active accountSet">
-							<a class="nav-link pt-1" href="../pages/home.html">
-								<i class="bix4 bi-house-door nav-icon"></i>
-							</a>
-							<span class="text-navbar-collage">Home</span>
-						</li>
-						<li class="nav-item accountSet">
-							<a class="nav-link pt-1" href="../pages/search.html">
-								<i class="bi bi-search nav-icon"></i>
-							</a>
-							<span class="text-navbar-collage">Search</span>
-						</li>
-						<li class="nav-item accountSet">
-							<a class="nav-link pt-1" href="../pages/cards.html">
-								<i class="bi bi-file-music nav-icon"></i>
-							</a>
-							<span class="text-navbar-collage">Vouchers</span>
-						</li>
-						<li class="nav-item accountSet">
-							<a class="nav-link pt-1" href="../pages/contact.html">
-								<i class="bi bi-chat-square-text nav-icon"></i>
-							</a>
-							<span class="text-navbar-collage">Contact</span>
-						</li>
-						<li class="nav-item accountSet">
-							<a class="nav-link pt-1" href="../pages/sign-in.html">
-								<i class="bi bi-person nav-icon"></i>
-							</a>
-							<span id="userNameNav"></span>
 						</li>
 					</ul>
 				</div>
@@ -158,7 +114,7 @@
 			<!-- Intro Section start -->
 			<div class="intro">
 				<div class="row">
-					<div class="col">
+					<div class="col col-text-intro">
 						<div class="text-intro">
 							<p class="title-intro text-light">GetMedia</p>
 							<p class="subtitle-intro text-light">
@@ -189,7 +145,7 @@
 					</p>
 
 					<div class="middleElements">
-						<p style="color: yellow">Go to find the music that you like</p>
+						<p class="yellow-yourMusic">Go to find the music that you like</p>
 						<button type="button" id="goToSearch" class="btn btn-search">
 							Go
 						</button>
@@ -253,22 +209,174 @@
 				<div id="vouchersCardDeck" class="vouchers-card-deck"></div>
 			</div>
 			<!-- Music Vouchers Section finish -->
+			<div class="yourMusic-Gift">
+				<div class="section-img">
+					<img
+						class="img-surprise"
+						src="../img/vouchers/surprise.jpg"
+						alt="surprise"
+					/>
+				</div>
+				<div class="section-surprise-text">
+					<div class="middleElements">
+						<h2 class="title-section-surprise">A little gift of music</h2>
+					</div>
+
+					<p class="text-section-surprise">
+						It is a long established fact that a reader will be distracted by
+						the readable content of a page when looking at its layout.
+					</p>
+
+					<div class="middleElements">
+						<p class="yellow-yourMusic">
+							Go to surprise your friends or your family
+						</p>
+						<button
+							type="button"
+							class="btn btn-buy-gift"
+							data-toggle="modal"
+							data-target="#exampleModal"
+						>
+							Buy a gift
+						</button>
+
+						<!-- Modal -->
+						<div
+							class="modal fade"
+							id="exampleModal"
+							tabindex="-1"
+							role="dialog"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">
+											Buy a Gift
+										</h5>
+										<button
+											type="button"
+											class="close"
+											data-dismiss="modal"
+											aria-label="Close"
+										>
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<form class="form-pages voucher-form">
+											<!-- name start -->
+											<div class="form-group">
+												<span class="fa fa-user form-control-icon"></span>
+												<input
+													type="text"
+													class="form-control"
+													placeholder="Card amount"
+													required
+												/>
+											</div>
+											<!-- name finish -->
+
+											<!-- Surname start -->
+											<div class="form-group">
+												<span class="fa fa-user form-control-icon"></span>
+												<input
+													type="text"
+													class="form-control"
+													placeholder="Quantity"
+													required
+												/>
+											</div>
+											<!-- checkbox start -->
+											<div class="form-group form-check">
+												<input
+													type="checkbox"
+													class="form-check-input"
+													id="exampleCheck1"
+												/>
+												<label
+													class="form-check-label text-light"
+													for="exampleCheck1"
+													>Gift Card</label
+												>
+											</div>
+											<!-- checkbox start -->
+											<!-- phone start -->
+											<div class="form-group">
+												<span class="fa fa-phone form-control-icon"></span>
+												<input
+													type="text"
+													class="form-control"
+													placeholder="To"
+													required
+												/>
+											</div>
+											<!-- phone finish -->
+
+											<!-- email start -->
+											<div class="form-group">
+												<span class="fa fa-envelope form-control-icon"></span>
+												<input
+													type="text"
+													class="form-control"
+													placeholder="From"
+													required
+												/>
+											</div>
+											<!-- email finish -->
+											<!-- textarea start -->
+											<div class="form-group">
+												<span class="fa fa-comment form-control-icon"></span>
+												<textarea
+													class="form-control"
+													id="textarea"
+													placeholder="Message"
+													rows="3"
+												></textarea>
+											</div>
+											<!-- textarea finish -->
+
+											<button type="submit" class="btn btn-form">
+												Add to the card
+											</button>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button
+											type="button"
+											class="btn btn-secondary"
+											data-dismiss="modal"
+										>
+											Close
+										</button>
+										<button type="button" class="btn btn-primary">
+											Checkout
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<!-- Music Cards POPULAR Section start -->
+
 			<div class="carousel-section">
 				<div class="music-cards-carousel-title">
 					<p>Popular</p>
 				</div>
 				<div id="carousel-web" class="col p-0 m-0">
 					<div
-						id="carouselExampleControls-popular"
+						id="carouselExampleControls-Recently-Played"
 						class="carousel slide"
 						data-bs-ride="carousel"
 					>
 						<div class="carousel-inner">
-							<div class="carousel-item active" data-interval="500000">
+							<div class="carousel-item active" data-interval="900000">
 								<div class="row">
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -282,7 +390,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -296,7 +404,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -310,7 +418,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -324,7 +432,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -338,7 +446,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -356,7 +464,7 @@
 							</div>
 							<div class="carousel-item">
 								<div class="row">
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -370,7 +478,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -384,7 +492,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -398,7 +506,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -412,7 +520,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -426,7 +534,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -447,7 +555,7 @@
 					<button
 						class="carousel-control-prev"
 						type="button"
-						data-target="#carouselExampleControls-popular"
+						data-target="#carouselExampleControls-Recently-Played"
 						data-slide="prev"
 					>
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -473,14 +581,14 @@
 				</div>
 				<div id="carousel-web" class="col p-0 m-0">
 					<div
-						id="carouselExampleControls-Recently-Played"
+						id="carouselExampleControls-popular"
 						class="carousel slide"
 						data-bs-ride="carousel"
 					>
 						<div class="carousel-inner">
-							<div class="carousel-item active" data-interval="500000">
+							<div class="carousel-item active" data-interval="900000">
 								<div class="row">
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -494,7 +602,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -508,7 +616,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -522,7 +630,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -536,7 +644,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -550,7 +658,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -568,7 +676,7 @@
 							</div>
 							<div class="carousel-item">
 								<div class="row">
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -582,7 +690,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -596,7 +704,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -610,7 +718,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -624,7 +732,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -638,7 +746,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2">
+									<div class="col col-song-card">
 										<div class="card card-to-play">
 											<img
 												src="../img/disorder-JoyDivision.png"
@@ -659,7 +767,7 @@
 					<button
 						class="carousel-control-prev"
 						type="button"
-						data-target="#carouselExampleControls-Recently-Played"
+						data-target="#carouselExampleControls-popular"
 						data-slide="prev"
 					>
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -679,7 +787,7 @@
 			<!-- Music Cards Recently Played Section finish -->
 
 			<!-- Music Cards Your Playlist Section start -->
-			<div class="carousel-section">
+			<!-- <div class="carousel-section">
 				<div class="music-cards-carousel-title">
 					<p>Your Playlist</p>
 				</div>
@@ -887,7 +995,8 @@
 						<span class="sr-only">Next</span>
 					</button>
 				</div>
-			</div>
+			</div> -->
+
 			<!-- Music Cards Your Playlist Section finish -->
 
 			<!-- Newsletter Section  start -->

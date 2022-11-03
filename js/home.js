@@ -19,7 +19,7 @@ let generateShop = () => {
 			let search = basket.find((x) => x.id === id) || [];
 
 			return `
-            <div id=product-id-${id} class="row">
+            <div id=product-id-${id} class="row row-cards">
 					<div class="card card-voucher">
 								<img
 									class="card-img-top"
@@ -30,7 +30,7 @@ let generateShop = () => {
 									<h4 class="card-title card-title-voucher-home text-light">${name}</h4>
 									<p class="card-text card-text-voucher-home text-light">${desc}</p>
 									<div class="row down-card-voucher">
-										<div class="col col-6 pr-0">
+										<div class="col col-6 pr-0 col-sum">
 											<div class="row m-0">
 												<button class="btn btn-minus p-0">
 													<i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
@@ -43,7 +43,7 @@ let generateShop = () => {
 												</button>
 											</div>
 										</div>
-										<div class="col col-6 p-0">
+										<div class="col col-6 p-0 col-btn-checkout">
 											<a href="../pages/shoppingBasket.html">
       											<button class="btn btn-cart-card">Checkout</button>
     										</a>

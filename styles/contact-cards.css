@@ -171,3 +171,47 @@
 }
 /* form finish */
 /* Vouchers Page finish */
+
+/* !Media Quey phone starts */
+@media screen and (max-width: 414px) {
+	.intro-pages {
+		width: 80%;
+		margin: auto;
+	}
+	.content-contact {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		margin: 5% auto 0;
+	}
+
+	.content-contact-left {
+		width: 100%;
+	}
+	.img-contact {
+		width: 100%;
+		height: 300px;
+		padding-bottom: 30px;
+	}
+	.get-in-touch {
+		width: 100%;
+	}
+	.getMedia-email,
+	.getMedia-address {
+		font-size: 17px;
+		padding-bottom: 30px;
+	}
+	.content-contact-right {
+		width: 100%;
+	}
+	.contact-form {
+		width: 100%;
+	}
+}
+
+/* !Media Quey phone finish */
+
+/* !Media Quey tablet starts */
+@media screen and (max-width: 768px) {
+}
+/* !Media Quey tablet finish */

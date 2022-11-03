@@ -64,3 +64,12 @@ td {
 .btn-search-searchPage {
 	width: 15%;
 }
+
+/* !Media Quey phone starts */
+@media screen and (max-width: 414px) {
+	/* !Media Quey phone finish */
+}
+/* !Media Quey tablet starts */
+@media screen and (max-width: 768px) {
+}
+/* !Media Quey tablet finish */

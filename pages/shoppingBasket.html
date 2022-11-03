@@ -48,7 +48,7 @@
 	<!-- use the ng-controller directive to scope this body to iTunesController -->
 	<body>
 		<header>
-			<!-- TOP NAVBAR START -->
+			<!-- RESPONSIVE NAVBAR START -->
 			<nav class="navbar fixed-top navbar-expand-lg top-navbar">
 				<button
 					class="navbar-toggler"
@@ -69,30 +69,42 @@
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active ml-3">
+						<li class="nav-item active nav-item-home">
 							<a class="nav-link pt-1" href="../pages/home.html">
-								<i class="bix4 bi-house-door nav-icon"></i>
+								<div class="container-link-nav-collapse">
+									<i class="bix4 bi-house-door nav-icon"></i>
+									<span class="text-link-nav">Home</span>
+								</div>
 							</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link pt-1" href="../pages/search.html">
-								<i class="bi bi-search nav-icon"></i>
+								<div class="container-link-nav-collapse">
+									<i class="bi bi-search nav-icon"></i>
+									<span class="text-link-nav">Search</span>
+								</div>
 							</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link pt-1" href="../pages/cards.html">
-								<i class="bi bi-file-music nav-icon"></i>
+								<div class="container-link-nav-collapse">
+									<i class="bi bi-file-music nav-icon"></i>
+									<span class="text-link-nav">Cards</span>
+								</div>
 							</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link pt-1" href="../pages/contact.html">
-								<i class="bi bi-chat-square-text nav-icon"></i>
+								<div class="container-link-nav-collapse">
+									<i class="bi bi-chat-square-text nav-icon"></i>
+									<span class="text-link-nav">Contact</span>
+								</div>
 							</a>
 						</li>
 					</ul>
 				</div>
 				<div class="navbar-expand-lg">
-					<ul class="navbar-nav mr-end mr-4 d-flex flex-row">
+					<ul class="navbar-nav mr-auto d-flex flex-row">
 						<li class="nav-item nav-item-userName">
 							<span id="userNameNav"></span>
 						</li>
@@ -101,7 +113,7 @@
 								<i class="bi bi-person nav-icon"></i>
 							</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item nav-item-cart">
 							<a class="nav-link pt-1 cart" href="../pages/shoppingBasket.html">
 								<i class="bi bi-cart nav-icon"></i>
 							</a>
@@ -110,12 +122,7 @@
 					</ul>
 				</div>
 			</nav>
-
-			<!-- TOP NAVBAR FINISH -->
-
-			<!-- SIDE NAVBAR START -->
-			<nav id="sidebar" class="active"></nav>
-			<!-- SIDE NAVBAR FINISH -->
+			<!-- RESPONSIVE NAVBAR FINISH -->
 		</header>
 
 		<!-- Main start -->

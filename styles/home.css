@@ -28,7 +28,7 @@
 	border-radius: 0.5rem;
 	margin-bottom: 100px;
 }
-.text-section-videos {
+div.text-section-videos {
 	color: #ffffff;
 	width: 80%;
 	margin: 50px auto;
@@ -45,7 +45,10 @@
 	flex-direction: column;
 	align-items: center;
 }
-
+p.text-section-videos {
+	width: 80%;
+	margin: 20px auto 40px;
+}
 .section-videos {
 	flex-wrap: wrap;
 	width: 50%;
@@ -65,10 +68,19 @@
 	width: 20%;
 	height: 160px;
 }
-.btn-search {
-	color: #ffffff !important;
-	background-color: #9052bf !important;
-	border-color: #9052bf !important;
+.yellow-yourMusic {
+	color: rgb(247, 247, 7);
+}
+#goToSearch {
+	width: 30%;
+	height: 50px;
+	background-color: rgb(59, 131, 189) !important;
+	color: rgb(255, 255, 255) !important;
+	border: none !important;
+	font-size: 18px;
+}
+#goToSearch:hover {
+	background-color: rgb(90, 4, 144) !important;
 }
 /*Your Music section finish */
 
@@ -100,6 +112,7 @@
 	justify-content: center;
 	background-color: #2e2d44;
 	padding: 30px 40px;
+	border-radius: 0.5rem;
 }
 .card-voucher {
 	width: 80%;
@@ -134,10 +147,49 @@
 .btn-cart-card:hover {
 	background-color: rgb(90, 4, 144) !important;
 }
-/* vouchers finish */
 /* Music VOUCHERS Section finish */
 
-/*  Music Cards carousel section start */
+/* Your Music-Gift start */
+.yourMusic-Gift {
+	display: flex;
+	flex-direction: row;
+
+	width: 80%;
+	margin: 60px auto;
+}
+.section-surprise-text {
+	width: 75%;
+	margin-left: 5%;
+}
+.title-section-surprise {
+	color: #ffffff;
+}
+.text-section-surprise {
+	color: #ffffff;
+	font-weight: lighter;
+}
+.btn-buy-gift {
+	width: 30%;
+	height: 50px;
+	background-color: rgb(59, 131, 189) !important;
+	color: rgb(255, 255, 255) !important;
+	border: none !important;
+	font-size: 18px;
+}
+.btn-buy-gift :hover {
+	background-color: rgb(90, 4, 144) !important;
+}
+.img-surprise {
+	width: 100%;
+	height: 240px;
+	border-radius: 10px;
+}
+.modal-content {
+	background-color: #e4e4f1 !important;
+}
+/* Your Music-Gift finish */
+
+/*  Music CARDS CAROUSEL section start */
 .carousel-section {
 	display: flex;
 	flex-direction: column;
@@ -147,16 +199,15 @@
 	margin: auto;
 	margin-bottom: 40px;
 }
+.col-song-card {
+	padding: 0 !important;
+}
 .music-cards-carousel-title {
 	color: #ffffff;
 	font-size: 30px;
 }
-.carousel-control-prev .carousel-control-next {
-	width: 20px;
-	height: 250px !important;
-}
 .card-to-play {
-	height: 250px;
+	/* height: 250px; */
 	margin: 0 !important;
 	border: 2px solid #01061e !important;
 }
@@ -164,7 +215,7 @@
 	height: 140px;
 }
 .card-body-music {
-	height: 30px;
+	/* height: 30px; */
 	background-color: #2e2d44;
 	padding: 10px !important;
 }
@@ -186,13 +237,13 @@
 }
 .carousel-control-next,
 .carousel-control-prev {
-	width: 40px !important;
-	height: 200px;
+	width: 30px !important;
 }
+
 .col-2 {
 	padding: 0 !important;
 }
-/* Music Cards carousel section finish */
+/* Music CARDS CAROUSEL section finish */
 
 /* Newsletter section start */
 .newsletter {
@@ -269,15 +320,125 @@ button:hover {
 /* main finish  */
 
 /* !Media Quey phone starts */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 414px) {
+	/*intro section start */
+	.intro {
+		width: 80%;
+		margin: 40px auto;
+	}
+	.title-intro {
+		font-size: 45px;
+		padding-top: 5%;
+	}
+	.subtitle-intro {
+		width: 100%;
+		font-size: 16px;
+	}
+	.big-logo-silhouette img {
+		width: 100%;
+		height: 160px;
+	}
+	/*intro section finish */
+
+	/*Your Music section start */
+	.yourMusic {
+		width: 88%;
+		flex-direction: column;
+		margin-bottom: 70px;
+	}
+	.middleElements {
+		width: 100%;
+	}
+	p.text-section-videos {
+		width: 100%;
+		font-size: 18px;
+	}
+	.yellow-yourMusic {
+		font-size: 20px;
+	}
+	#goToSearch {
+		width: 100%;
+		height: 50px;
+	}
+
+	.section-videos {
+		margin: 0 7.5% 40px;
+		width: 100%;
+		justify-content: center;
+	}
+	/*Your Music section finish */
+
+	/* Your Music-Gift start */
+	.yourMusic-Gift {
+		display: flex;
+		flex-direction: column;
+	}
+	.section-surprise-text {
+		width: 100%;
+		margin: 0;
+		padding-top: 20px;
+	}
+	.text-section-surprise {
+		font-size: 18px;
+	}
+	.btn-buy-gift {
+		width: 100%;
+		font-size: 20px !important;
+	}
+	/* Your Music-Gift finish */
+
+	/* Music VOUCHERS Section start */
+	.intro-titles {
+		margin-bottom: 20px;
+	}
+	.subtitle-page {
+		padding-top: 5px;
+		font-size: 22px;
+		font-weight: bold;
+	}
+	.text-vouchers {
+		margin-bottom: 40px;
+		font-size: 18px;
+	}
+	/* vouchers */
+	.music-cards-section {
+		margin-bottom: 70px;
+	}
+	.vouchers-card-deck {
+		flex-direction: column;
+		padding: 15px 10px;
+	}
+	.row-cards {
+		margin-left: 0 !important;
+	}
+	.card-voucher {
+		width: 90%;
+		margin: 10px;
+	}
+	.card-title {
+		font-size: 22px;
+		margin-bottom: 10px !important;
+	}
+	.card-text-voucher-home {
+		font-weight: lighter;
+		font-size: 18px;
+	}
+	/* vouchers finish */
+
+	/*  Music CARDS CAROUSEL section start */
+	.card-text-group-carousel {
+		font-size: 16px;
+	}
+	.col-song-card {
+		width: 200px;
+		height: 300px;
+		padding-bottom: 20px;
+	}
+	/* Music CARDS CAROUSEL section finish */
 }
 /* !Media Quey phone finish */
 
-/* !Media Quey phone starts */
-@media screen and (max-width: 360px) {
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* !Media Quey tablet starts */
 @media screen and (max-width: 768px) {
 }
-/* !Media Quey phone finish */
+/* !Media Quey tablet finish */
