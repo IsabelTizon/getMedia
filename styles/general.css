@@ -24,6 +24,9 @@ input.input-search {
 /* Imputs finish */
 
 /* top-navbar start  */
+#sidebar {
+	display: none;
+}
 .top-navbar {
 	position: fixed;
 	width: 100vw;
@@ -168,54 +171,73 @@ footer {
 /* footer finish  */
 /* !Media Quey phone starts */
 @media screen and (max-width: 360px) {
-	/* top-navbar start  */
-	navbar .logo {
+	/* Navbar section start  */
+	#sideNavbar {
+		display: flex;
+		padding: 0;
+	}
+	.logo {
 		max-height: 60px;
 		padding-top: 5px;
 		margin-left: 0;
 	}
-
 	.nav-item {
-		width: 40px;
+		margin: 0;
+		width: 15px;
 		height: 40px;
 	}
-	.nav-icon {
-		margin-right: 10px;
-		color: #eadbf6;
-		font-size: 25px;
+	.navbar-toggler-icon {
+		/* color: #eadbf6 !important; */
+		background-color: #fff;
 	}
-	.nav-item-userName {
+	.navbar-collapse {
+		background-color: #2e2d44;
+		padding: 5%;
+	}
+	.accountSet {
 		display: flex;
-		justify-content: center;
-		align-items: center !important;
-		width: 70px !important;
+		flex-direction: row;
 	}
-	#userNameNav {
-		margin-top: 10px;
+	.text-navbar-collage {
 		color: #eadbf6;
-	}
-	.cart {
-		border-radius: 3px #2e2d44;
-		position: relative;
+		margin-top: 10px;
 	}
 	.cartAmount {
-		position: absolute;
-		top: -3px;
-		right: 25px;
-		margin-top: 10px;
-		padding: 3px;
-		border-radius: 3px;
-		font-size: 14px;
-		background-color: rgb(255, 0, 0);
-		color: rgb(255, 255, 255);
-	}
-	.sidebar {
-		display: none;
-	}
-	.navbar-toggler {
-		width: 50px;
+		right: 15px;
 	}
 }
+/* Footer section start  */
+.container-footer {
+	width: 80% !important;
+	margin: 0 auto 30px auto !important;
+	padding: 0 !important;
+}
+.ourProducts-section {
+	padding-top: 30px;
+}
+p.title-section-footer {
+	font-size: 19px;
+	width: 200px;
+	margin-right: 0 !important;
+}
+
+.link-footer {
+	color: #ffffff;
+	font-size: 14px;
+	margin-left: 0;
+	font-weight: lighter;
+}
+
+.icon-footer-rectangle {
+	width: 130px;
+	height: 60px;
+}
+.icon-footer {
+	width: 50px;
+	height: 50px;
+}
+
+/* Footer section start  */
 /* !Media Quey phone finish */
 
 /* !Media Quey tablet starts */

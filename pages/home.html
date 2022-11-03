@@ -34,7 +34,7 @@
 	<body>
 		<header>
 			<!-- TOP NAVBAR START -->
-			<nav class="navbar fixed-top navbar-expand-lg top-navbar">
+			<nav id="topNavbar" class="navbar fixed-top navbar-expand-lg top-navbar">
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -93,12 +93,65 @@
 					</ul>
 				</div>
 			</nav>
-
 			<!-- TOP NAVBAR FINISH -->
 
-			<!-- SIDE NAVBAR START -->
-			<nav id="sidebar" class="active"></nav>
-			<!-- SIDE NAVBAR FINISH -->
+			<!-- RESPONSIVE NAVBAR START -->
+			<nav id="sideNavbar" class="navbar fixed-top navbar-expand-lg top-navbar">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a href="../pages/home.html">
+					<img class="logo" src="../img/logo.svg" alt="logo" />
+				</a>
+				<a class="nav-link pt-1 cart" href="../pages/shoppingBasket.html">
+					<i class="bi bi-cart nav-icon"></i>
+				</a>
+				<div id="cartAmount" class="cartAmount text-light">0</div>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active accountSet">
+							<a class="nav-link pt-1" href="../pages/home.html">
+								<i class="bix4 bi-house-door nav-icon"></i>
+							</a>
+							<span class="text-navbar-collage">Home</span>
+						</li>
+						<li class="nav-item accountSet">
+							<a class="nav-link pt-1" href="../pages/search.html">
+								<i class="bi bi-search nav-icon"></i>
+							</a>
+							<span class="text-navbar-collage">Search</span>
+						</li>
+						<li class="nav-item accountSet">
+							<a class="nav-link pt-1" href="../pages/cards.html">
+								<i class="bi bi-file-music nav-icon"></i>
+							</a>
+							<span class="text-navbar-collage">Vouchers</span>
+						</li>
+						<li class="nav-item accountSet">
+							<a class="nav-link pt-1" href="../pages/contact.html">
+								<i class="bi bi-chat-square-text nav-icon"></i>
+							</a>
+							<span class="text-navbar-collage">Contact</span>
+						</li>
+						<li class="nav-item accountSet">
+							<a class="nav-link pt-1" href="../pages/sign-in.html">
+								<i class="bi bi-person nav-icon"></i>
+							</a>
+							<span id="userNameNav"></span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- RESPONSIVE NAVBAR FINISH -->
 		</header>
 
 		<main>
@@ -867,7 +920,7 @@
 			<!-- Newsletter Section  finish -->
 		</main>
 		<footer>
-			<div class="container container-footer p-0">
+			<div class="container container-footer">
 				<div class="row">
 					<div class="col ourProducts-section">
 						<p class="title-section-footer">Our Products</p>
@@ -890,7 +943,7 @@
 						<a class="row link-footer" href="#">Complains policy</a>
 					</div>
 					<div class="col ourProducts-section">
-						<div class="col">
+						<div class="col pl-0">
 							<p class="title-section-footer">Follow us on social</p>
 							<div class="row">
 								<a class="link-footer" href="#"
@@ -919,7 +972,7 @@
 								/></a>
 							</div>
 						</div>
-						<div class="col py-5">
+						<div class="col pt-3 pl-0">
 							<p class="title-section-footer">Download our app</p>
 							<div class="row">
 								<a class="link-footer" href="#"
