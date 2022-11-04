@@ -19,7 +19,7 @@ table {
 tr {
 	margin: auto;
 	width: 90%;
-	padding-bottom: 30px;
+	border: solid 2px black;
 }
 .intro-itunes-search {
 	display: flex;
