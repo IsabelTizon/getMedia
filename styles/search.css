@@ -8,6 +8,9 @@ table {
 	color: #ffffff !important;
 	background-color: #9052bf !important;
 	border-color: #9052bf !important;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 }
 .intro-itunes-search,
 tr {
@@ -20,7 +23,11 @@ tr {
 	flex-wrap: wrap;
 	flex-direction: row;
 }
-
+.big-img-itunes {
+	width: 30% !important;
+	height: 300px;
+	padding-bottom: 50px;
+}
 td.litle-itunes-img,
 td.itunes-price,
 td.itunes-play {
