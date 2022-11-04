@@ -150,25 +150,28 @@
 					<!-- The song data is loaded into objects for easy access. Just call on the attributes you need. -->
 					<tr data-ng-repeat="song in songs">
 						<!-- ng-src lets you load imgs when data is present. -->
-
-						<td class="litle-itunes-img">
-							<img
-								data-ng-src="{{song.artworkUrl60}}"
-								alt="{{song.collectionName}}"
-							/>
-						</td>
-						<td class="artist-name">{{song.artistName}}</td>
-						<td>{{song.trackName}}</td>
-						<td class="itunes-genre">{{song.primaryGenreName}}</td>
-						<td class="itunes-play">
-							<a href="{{song.previewUrl}}"
-								><img
-									class="icon-play"
-									src="../img/icons/play.png"
-									alt="icon play"
-							/></a>
-						</td>
-						<td class="itunes-price">£{{song.collectionPrice}}</td>
+						<div class="left">
+							<td class="litle-itunes-img">
+								<img
+									data-ng-src="{{song.artworkUrl60}}"
+									alt="{{song.collectionName}}"
+								/>
+							</td>
+						</div>
+						<div class="right">
+							<td class="artist-name">{{song.artistName}}</td>
+							<td>{{song.trackName}}</td>
+							<td class="itunes-genre">{{song.primaryGenreName}}</td>
+							<td class="itunes-play">
+								<a href="{{song.previewUrl}}"
+									><img
+										class="icon-play"
+										src="../img/icons/play.png"
+										alt="icon play"
+								/></a>
+							</td>
+							<td class="itunes-price">£{{song.collectionPrice}}</td>
+						</div>
 					</tr>
 				</tbody>
 			</table>
