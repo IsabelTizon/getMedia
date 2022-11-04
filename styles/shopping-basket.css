@@ -79,3 +79,26 @@ span.fa.fa-trash {
 	color: aliceblue;
 }
 /*? SHOPPING-CART  finish */
+
+/* !Media Quey phone starts */
+@media screen and (max-width: 414px) {
+	.title-basket {
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+	h1 {
+		font-size: 33px !important;
+	}
+	h2 {
+		font-size: 25px !important;
+	}
+	.cart-page {
+		width: 80% !important;
+		margin: auto;
+		padding-bottom: 50px !important;
+	}
+}
+/* !Media Quey tablet starts */
+@media screen and (max-width: 768px) {
+}
+/* !Media Quey tablet finish */
