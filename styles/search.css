@@ -42,6 +42,7 @@ td {
 }
 td.artist-name {
 	color: rgb(226, 226, 13);
+	width: 25%;
 }
 .big-img-itunes {
 	max-width: 90%;
