@@ -289,6 +289,12 @@ video {
 }
 .btn-subscribe {
 	width: 30%;
+	background-color: rgb(59, 131, 189) !important;
+	color: rgb(255, 255, 255) !important;
+	border: none !important;
+}
+.btn-subscribe:hover {
+	background-color: rgb(90, 4, 144) !important;
 }
 
 .text-newsletter {

@@ -17,7 +17,7 @@ main {
 }
 /* General finish */
 
-/* Imputs finish */
+/* Imputs start */
 input.input-search {
 	padding-left: 10px;
 }
@@ -214,7 +214,7 @@ footer {
 	.navbar-collapse {
 		background-color: #2e2d44;
 		padding: 0;
-		height: 400px;
+		height: 300px;
 	}
 	.container-link-nav-collapse {
 		display: flex;
@@ -273,7 +273,10 @@ footer {
 /* !Media Quey phone finish */
 
 /* !Media Quey tablet starts */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 414px) {
+	.text-link-nav {
+		padding-left: 20px;
+	}
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
