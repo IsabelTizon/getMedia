@@ -20,6 +20,7 @@ tr {
 	flex-wrap: wrap;
 	flex-direction: row;
 }
+
 td.litle-itunes-img,
 td.itunes-price,
 td.itunes-play {
@@ -71,13 +72,20 @@ td.artist-name {
 		margin: auto;
 	}
 	.form-search-iTunes {
-		padding-top: 40px;
-		padding-bottom: 40px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 		margin: auto;
 		width: 90%;
 	}
 	.btn-search-searchPage {
 		width: 35%;
+	}
+	.intro-itunes-search {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 50px;
 	}
 	.big-img-itunes {
 		width: 100% !important;
