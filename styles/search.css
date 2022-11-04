@@ -70,78 +70,40 @@ td.artist-name {
 		width: 95%;
 		margin: auto;
 	}
-	/* #formSearchItunes {
-		width: 90%;
-		margin: auto;
-	} */
-	/* input serach start */
-	.form-search-iTunes {
-		padding-bottom: 40px;
-		margin: auto;
-		width: 90% !important;
-	}
-	.btn-search-searchPage {
-		width: 35%;
-	}
-	.intro-itunes-search {
-		display: flex;
-		flex-direction: column;
-		width: 90%;
-		margin: 0 auto 40px;
-		align-items: center;
-	}
 	.big-img-itunes {
 		width: 100%;
+		height: 400px;
+		padding-bottom: 30px;
 	}
-	/* input search finish */
-	/* 
+	td.litle-itunes-img {
+		display: block;
+		float: left;
+		width: 40%;
+		margin: 0 !important;
 	}
-	.intro-itunes-search,
-	tr {
-		margin: auto;
-		width: 90%;
-		border: solid 2px black;
+	.img-table {
+		width: 100%;
+		height: 150px;
 	}
-	.intro-itunes-search {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
+	td.ng-binding {
+		display: block;
+		float: right;
+		width: 60%;
+		margin: 0 !important;
+		padding-left: 20px;
 	}
-	td.litle-itunes-img,
-	td.itunes-price,
 	td.itunes-play {
-		width: 5%;
-		color: #ffffff;
+		display: block;
+		float: right;
+		width: 70%;
+		margin: 0 !important;
+		padding-left: 70px;
 	}
-	td.itunes-genre {
-		width: 10%;
-	}
+
+	td th,
 	td {
-		width: 30%;
-		color: #ffffff;
-		font-weight: lighter;
+		display: block;
 	}
-	td.artist-name {
-		color: rgb(226, 226, 13);
-		width: 25%;
-	}
-	.big-img-itunes {
-		max-width: 90%;
-		height: 300px;
-	}
-
-
-	.icon-play {
-		width: 30px;
-		height: 30px;
-	}
-	.input-search-searchPage {
-		width: 85%;
-		height: 40px;
-	}
-	.btn-search-searchPage {
-		width: 15%;
-	} */
 }
 /* !Media Quey tablet starts */
 @media screen and (max-width: 768px) {
