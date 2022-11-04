@@ -39,7 +39,7 @@ td.artist-name {
 	width: 25%;
 }
 .big-img-itunes {
-	max-width: 90%;
+	width: 90%;
 	height: 300px;
 }
 .form-search-iTunes {
@@ -70,8 +70,17 @@ td.artist-name {
 		width: 95%;
 		margin: auto;
 	}
+	.form-search-iTunes {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		margin: auto;
+		width: 90%;
+	}
+	.btn-search-searchPage {
+		width: 35%;
+	}
 	.big-img-itunes {
-		width: 100%;
+		width: 100% !important;
 		height: 400px;
 		padding-bottom: 30px;
 	}
@@ -84,6 +93,8 @@ td.artist-name {
 	.img-table {
 		width: 100%;
 		height: 150px;
+		padding-left: 15px;
+		padding-top: 15px;
 	}
 	td.ng-binding {
 		display: block;
@@ -91,13 +102,22 @@ td.artist-name {
 		width: 60%;
 		margin: 0 !important;
 		padding-left: 20px;
+		padding-top: 20px;
+	}
+	td.artist-name.ng-binding {
+		font-size: 20px;
 	}
 	td.itunes-play {
 		display: block;
 		float: right;
 		width: 70%;
+		height: 56px;
 		margin: 0 !important;
-		padding-left: 70px;
+		padding-left: 200px;
+	}
+	.icon-play {
+		width: 42px;
+		height: 44px;
 	}
 
 	td th,
