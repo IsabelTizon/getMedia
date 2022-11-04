@@ -38,6 +38,10 @@ td.itunes-genre {
 td {
 	width: 30%;
 	color: #ffffff;
+	font-weight: lighter;
+}
+td.artist-name {
+	color: rgb(226, 226, 13);
 }
 .big-img-itunes {
 	max-width: 90%;
