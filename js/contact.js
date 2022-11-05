@@ -1,26 +1,11 @@
-// const form = document.querySelector(".form");
-
-const btn = document.getElementById("submit");
-console.log(btn); // 👉️ null
-
-// ✅ Check if btn exists before addEventListener()
-if (btn) {
-	btn.addEventListener("click", () => {
-		console.log("btn clicked");
-	});
-}
-
-// ✅ Using optional chaining (?.)
-btn?.addEventListener("click", () => {
-	console.log("btn clicked");
-});
-
+//Global variables
 let inputName = document.getElementById("name").value.trim();
 let inputSurname = document.getElementById("surName").value.trim();
 let inputphone = parseInt(document.getElementById("phone").value.trim());
 let inputEmail = document.getElementById("email").value.trim();
 let inputMessage = document.getElementById("textarea").value.trim();
 
+// After click the input fields were grabbed
 document.getElementById("submit").addEventListener("click", function (e) {
 	e.preventDefault();
 
@@ -40,14 +25,14 @@ document.getElementById("submit").addEventListener("click", function (e) {
 });
 
 function checkingForm() {
+	//this messag ewill be introduced if the conditional is true
 	const messageFillagain = $(makeModal("Please enter all the details"));
-	// messageFillagain.modal("show");
 
+	//this messag ewill be introduced if the conditional is false
 	const messagePass = $(
 		makeModal("Thank you for your interest, we will contact you ASAP")
 	);
-	// messagePass.modal("show");
-
+	//Conditional
 	if (
 		!inputName ||
 		!inputSurname ||
@@ -60,6 +45,7 @@ function checkingForm() {
 		return messagePass.modal("show");
 	}
 
+	// Modal
 	function makeModal(text) {
 		return `<div id="myModal" class="modal fade" role="dialog" style="display: none">
   <div class="modal-dialog">
@@ -71,26 +57,6 @@ function checkingForm() {
       </div>
       <div class="modal-body">
         <p>${text}</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>`;
-	}
-	function makeModal(text2) {
-		return `<div id="myModal" class="modal fade" role="dialog" style="display: none">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <p>${text2}</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

@@ -1,4 +1,4 @@
-//Sign In
+// After click login btn, grab the values that the user had introduced  and clear the field
 document.getElementById("loginIn").addEventListener("click", function (e) {
 	e.preventDefault();
 	let inputName = document.getElementById("name").value.trim(); //I assigned to the inputName variable the value that I introduced through the DOM, I changed it to uppercase and allow no white space to interfere
@@ -7,7 +7,8 @@ document.getElementById("loginIn").addEventListener("click", function (e) {
 	document.getElementById("name").value = " "; //Clearing input field after click
 	document.getElementById("password").value = " "; //Clearing input field after click
 
-	gettingDetails(inputName, inputpassword); //I called the function when I clicked
+	//Calling
+	gettingDetails(inputName, inputpassword);
 });
 
 function gettingDetails(inputName, inputpassword) {
@@ -28,6 +29,7 @@ function gettingDetails(inputName, inputpassword) {
 		console.log(Array.isArray(userDetailsArray)); //I verified that it has been saved as an array
 		console.log("my array", userDetailsArray); //I verified that the array contains properties and values
 
+		//looping through the array with a for to see if the name or password exists
 		function userDetailsArrayFound() {
 			for (let i = 0; i <= userDetailsArray.length - 1; i++) {
 				console.log("array element", userDetailsArray[i]);
@@ -42,13 +44,13 @@ function gettingDetails(inputName, inputpassword) {
 		}
 
 		if (userDetailsArrayFound()) {
-			// a new key was created in the localStorage  with the inpunt name that was inserted by the user and is keep it like a string value.
+			// If the same name and the same password have been found in our localStorage array, the name will be take and put it in another new localStorage array (set method) as a string with the method stringify
 			localStorage.setItem("userLogged", JSON.stringify(inputName));
 
 			//redirection to the home page if the user details (name  and password) were found
 			window.location.href = "home.html";
 		} else {
-			//if the details
+			//As the user details have not been found a message renders on the screen
 			alert("wrong details, try again");
 		}
 	}

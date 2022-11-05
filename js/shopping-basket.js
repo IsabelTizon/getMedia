@@ -1,17 +1,11 @@
+// A part of my html was assigned to a variable
 let label = document.getElementById("label");
-// let backHome = document.getElementById("backHome");
-// backHome.innerHTML = `
-//  <a href="../index.html">
-// <div class="back-to-shop">
-//   <a href="#">&leftarrow;</a>
-//   <span class="text-light p-lg-2">Back to shop</span>
-// </div>
-// </a>
-// `;
+
+// A part of my html was assigned to a variable
 let shoppingCart = document.getElementById("shoppingCart");
 
 //Accesing to our LOCAL STORAGE
-//if we have local data is gonna retrieve: JSON.parse(localstorage.getItem("data")
+//if I have local data is gonna retrieve: JSON.parse(localstorage.getItem("data")
 //if not is gonna retrive an empty array
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 

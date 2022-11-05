@@ -1,23 +1,24 @@
+// assign an html element to a variable in order to write over it
 let vouchersCardDeck = document.getElementById("vouchersCardDeck");
 
-//BASKET LOCAL STORAGE
-// let basket = [];
-
-//if we have local data is gonna retrieve: JSON.parse(localstorage.getItem("data")
+//if I have local data, is gonna retrieve: JSON.parse(localstorage.getItem("data")
 //if not is gonna retrive an empty array
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
-// function abcd() {}
-//array function assig it to a constant
+// let myFunction = abcd() {}: example of arrow function
+//when the function is called the next code will be execute it and rendered into our page
 let generateShop = () => {
+	//returns us the code
 	return (vouchersCardDeck.innerHTML = shopItemsData
-		// shopItemsData[i] ==> shopItem
+		//looping through the array of objects called shopItemsData
 		.map((shopItem) => {
+			const { id, name, desc, img } = shopItem;
+			// to not write the x in ${x.id}, ${x.name}, ${x.desc}, ${x.img}
 			// x is the object
-			const { id, name, desc, img } = shopItem; // to not write the x in ${x.id}, ${x.name}, ${x.desc}, ${x.img}
-			//if nothing can be found an empty array will be return
-			let search = basket.find((x) => x.id === id) || [];
 
+			let search = basket.find((x) => x.id === id) || [];
+			//if nothing can be found an empty array will be return
+			//but if something is found the next code will return
 			return `
             <div id=product-id-${id} class="row row-cards">
 					<div class="card card-voucher">
@@ -55,10 +56,11 @@ let generateShop = () => {
 		})
 		.join("")); //join methond concatenates an array of strings into one string
 };
+
 // Here I run the function
 generateShop();
 
-//INCREMENT FUNCTION
+//INCREMENT FUNCTION: adding items in the cart
 let increment = (id) => {
 	//id to recognise if the btn is increment or decrement
 	// console.log("increment", id);
@@ -69,7 +71,7 @@ let increment = (id) => {
 
 	let search = basket.find((x) => x.id === selectedItem.id);
 
-	//Conditional to see if the item doesn't exist add it inside the basket
+	//Conditional to see if the item doesn't exist, add it inside the basket
 	if (search === undefined) {
 		//instoring the data insite our basket with the method push
 		basket.push({
@@ -82,17 +84,16 @@ let increment = (id) => {
 	}
 
 	// console.log(basket);
-	// Here I run the functions
+
+	// Here I run the function
 	update(selectedItem.id);
 
-	// Data will be the key of our LOCAL STORAGE
-	// A common use of JSON is to exchange data to/from a web server.
-	//When sending data to a web server, the data has to be a string.
-	//Convert a JavaScript object into a string with JSON.stringify().
+	//Setting the data in our localStorage basket
+	//the localstorage is in the end because js need to run the data before to salve it later
 	localStorage.setItem("data", JSON.stringify(basket));
 };
 
-//DECREMENT FUNCTION
+//DECREMENT FUNCTION: subtracting items from cart
 let decrement = (id) => {
 	//id to recognise if the btn is increment or decrement
 	// console.log("increment", id);
@@ -118,15 +119,14 @@ let decrement = (id) => {
 	//Selecting all the objects which doesn't have a 0 on the item
 	basket = basket.filter((x) => x.item !== 0);
 
-	// console.log(basket);
-	//storing data in the LOCAL STORAGE
+	//Setting the data in our localStorage basket
 	//the localstorage is in the end because js need to run the data before to salve it later
 	localStorage.setItem("data", JSON.stringify(basket));
 };
 
 //UPDATE FUNCTION
 let update = (id) => {
-	//if the item exists only then the cart will increase in the quantity of the card
+	//if the item exists, only then the cart will increase in the quantity of the card
 	let search = basket.find((x) => x.id === id);
 	document.getElementById(id).innerHTML = search.item;
 
