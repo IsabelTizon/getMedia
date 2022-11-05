@@ -84,7 +84,8 @@ ul.navbar-nav.mr-auto.d-flex.flex-row {
 
 /* shopping cart */
 .cart {
-	border-radius: 3px #2e2d44;
+	border-radius: 3px;
+	border-color: #2e2d44;
 	position: relative;
 }
 .cartAmount {
@@ -225,7 +226,7 @@ p.title-section-footer {
 	/* Navbar mobile start  */
 	.logo {
 		max-height: 70px;
-		padding-top: 20;
+		padding-top: 20px;
 	}
 	/*links*/
 	ul.navbar-nav.mr-auto.d-flex.flex-row {
@@ -278,7 +279,7 @@ p.title-section-footer {
 	/* Navbar mobile start  */
 	.logo {
 		height: 60px;
-		padding-top: 50;
+		padding-top: 50px;
 		margin-left: 0;
 	}
 
