@@ -75,9 +75,24 @@
 						><i class="bi bi-list nav-icon"></i
 					></span>
 				</button>
-				<a href="../pages/home.html">
-					<img class="logo" src="../img/logo.svg" alt="logo" />
-				</a>
+				<img class="logo" src="../img/logo.svg" alt="logo" />
+
+				<ul class="navbar-nav mr-auto d-flex flex-row">
+					<li class="nav-item nav-item-userName">
+						<span id="userNameNav"></span>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link pt-1" href="../pages/sign-in.html">
+							<i class="bi bi-person nav-icon"></i>
+						</a>
+					</li>
+					<li class="nav-item nav-item-cart">
+						<a class="nav-link pt-1 cart" href="../pages/shoppingBasket.html">
+							<i class="bi bi-cart nav-icon"></i>
+						</a>
+						<div id="cartAmount" class="cartAmount text-light">0</div>
+					</li>
+				</ul>
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
@@ -97,14 +112,7 @@
 								</div>
 							</a>
 						</li>
-						<!-- <li class="nav-item">
-							<a class="nav-link pt-1" href="../pages/cards.html">
-								<div class="container-link-nav-collapse">
-									<i class="bi bi-file-music nav-icon"></i>
-									<span class="text-link-nav">Cards</span>
-								</div>
-							</a>
-						</li> -->
+
 						<li class="nav-item">
 							<a class="nav-link pt-1" href="../pages/contact.html">
 								<div class="container-link-nav-collapse">
@@ -112,24 +120,6 @@
 									<span class="text-link-nav">Contact</span>
 								</div>
 							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="navbar-expand-lg">
-					<ul class="navbar-nav mr-auto d-flex flex-row">
-						<li class="nav-item nav-item-userName">
-							<span id="userNameNav"></span>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link pt-1" href="../pages/sign-in.html">
-								<i class="bi bi-person nav-icon"></i>
-							</a>
-						</li>
-						<li class="nav-item nav-item-cart">
-							<a class="nav-link pt-1 cart" href="../pages/shoppingBasket.html">
-								<i class="bi bi-cart nav-icon"></i>
-							</a>
-							<div id="cartAmount" class="cartAmount text-light">0</div>
 						</li>
 					</ul>
 				</div>

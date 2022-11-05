@@ -31,6 +31,11 @@ input.input-search {
 	width: 100vw;
 	background-color: #2e2d44;
 	z-index: 10;
+	display: flex;
+}
+ul.navbar-nav.mr-auto.d-flex.flex-row {
+	margin-right: 0 !important;
+	order: 1;
 }
 .logo {
 	height: 65px;
@@ -248,6 +253,9 @@ p.title-section-footer {
 		top: 5px;
 	}
 	/* collapse */
+	ul.navbar-nav.mr-auto.d-flex.flex-row {
+		order: 0;
+	}
 	.navbar-collapse {
 		background-color: #2e2d44;
 		padding: 14px;
@@ -315,6 +323,9 @@ p.title-section-footer {
 		padding-top: 20;
 	}
 	/*links*/
+	ul.navbar-nav.mr-auto.d-flex.flex-row {
+		order: 0;
+	}
 	.nav-item {
 		padding-bottom: 10px;
 	}
