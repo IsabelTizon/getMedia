@@ -278,8 +278,9 @@ p.title-section-footer {
 @media screen and (max-width: 414px) {
 	/* Navbar mobile start  */
 	.logo {
-		height: 60px;
-		padding-top: 50px;
+		height: 70px;
+		width: 150px;
+		padding-top: 0;
 		margin-left: 0;
 	}
 
