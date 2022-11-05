@@ -3,8 +3,8 @@
 	padding: 0;
 }
 
+/* video background page */
 video {
-	/** Simulationg background-size: cover */
 	object-fit: cover;
 	height: 100%;
 	width: 100%;
@@ -14,25 +14,17 @@ video {
 	left: 0;
 }
 .video-wrapper {
-	/* Telling our absolute positioned video to 
-  be relative to this element */
 	position: relative;
-
 	width: 100vw;
 	height: 100vh;
-
-	/* Will not allow the video to overflow the 
-  container */
 	overflow: hidden;
-
-	/* Centering the container's content vertically 
-  and horizontally */
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
+/* container of the page */
 .container-sign {
 	display: flex;
 	flex-direction: column;
@@ -42,6 +34,8 @@ video {
 	margin: auto;
 	background: none;
 }
+
+/* title with background */
 .overlay {
 	background: rgba(85, 92, 85, 0.5);
 }
@@ -49,9 +43,13 @@ video {
 	margin: 0;
 	padding: 5px;
 }
+
+/* img logo */
 img {
 	margin-top: 30px;
 }
+
+/* container btns sign in and sign up*/
 .container-btn {
 	display: flex;
 	flex-direction: row;
@@ -68,3 +66,24 @@ button:hover {
 	background-color: #2e2d44 !important;
 	color: white !important;
 }
+
+/* !Media Quey phone starts */
+@media screen and (max-width: 414px) {
+	.p-overlay {
+		font-size: 15px !important;
+		padding: 5px !important;
+	}
+}
+/* !Media Quey phone finish */
+
+/* !Media Quey tablet starts */
+@media screen and (max-width: 768px) {
+	.container-sign {
+		width: 55vw !important;
+	}
+	.p-overlay {
+		font-size: 18px;
+		padding: 10px;
+	}
+}
+/* !Media Quey tablet finish */

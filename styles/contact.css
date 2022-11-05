@@ -1,0 +1,132 @@
+/* Content: picture, get in touch and form  */
+.content-contact {
+	display: flex;
+	flex-direction: row;
+	width: 60%;
+	margin: 5% auto 0;
+}
+/* Content left: picture and get in touch */
+.content-contact-left {
+	width: 60%;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+}
+/* get in touch */
+.get-in-touch {
+	margin-top: 30px;
+	width: 80%;
+}
+.get-in-touch-title {
+	color: #ffffff;
+}
+.img-contact {
+	width: 80%;
+	height: 300px;
+	border-radius: 10px;
+}
+.hr-get-in-touch {
+	width: 100%;
+	height: 1px;
+	background-color: #ffffff;
+}
+.content-getMedia-email,
+.content-getMedia-map {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 20px;
+}
+.content-getMedia-map {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.icon-getMedia-email,
+.icon-getMedia-map {
+	width: 40px;
+	height: 30px;
+	padding-right: 10px;
+}
+.getMedia-email,
+.getMedia-address {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+/* Content right: form */
+.content-contact-right {
+	width: 50%;
+	height: 500px;
+}
+/* form */
+.contact-form {
+	width: 85%;
+	margin: auto;
+}
+/* form-pages styles are in general.css file */
+
+/* !Media Quey phone starts */
+@media screen and (max-width: 414px) {
+	/* Tex intro: Title and subtitle */
+	.intro-pages {
+		width: 80%;
+		margin: auto;
+	}
+	/* Content: picture, get in touch and form  */
+	.content-contact {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		margin: 5% auto 0;
+	}
+	/* Content left: picture and get in touch */
+	.content-contact-left {
+		width: 100%;
+	}
+	.img-contact {
+		width: 100%;
+		height: 300px;
+		padding-bottom: 30px;
+	}
+	/* get in touch */
+	.get-in-touch {
+		width: 100%;
+	}
+	.getMedia-email,
+	.getMedia-address {
+		font-size: 17px;
+		padding-bottom: 30px;
+	}
+	/* Content right: form */
+	.content-contact-right {
+		width: 100%;
+	}
+	/* form */
+	.contact-form {
+		width: 100%;
+	}
+}
+
+/* !Media Quey phone finish */
+
+/* !Media Quey tablet starts */
+@media screen and (max-width: 768px) {
+	.intro-pages {
+		width: 80%;
+		margin: auto;
+	}
+	.content-contact {
+		width: 80%;
+		margin: 5% auto 0;
+	}
+	.contact-form {
+		width: 97%;
+	}
+	.img-contact {
+		width: 90%;
+		margin: 0;
+		height: 290px;
+	}
+}
+/* !Media Quey tablet finish */

@@ -1,21 +1,16 @@
-/* Made with love by Mutiullah Samim*/
-
-@import url("https://fonts.googleapis.com/css?family=Numans");
-
 html,
 body {
 	background-image: url(../img/newsletter.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100%;
-	font-family: "Numans", sans-serif;
 }
 
 .container {
 	height: 100%;
 	align-content: center;
 }
-
+/* Card start */
 .card {
 	height: 370px;
 	margin-top: auto;
@@ -28,6 +23,7 @@ body {
 	color: white;
 }
 
+/* form */
 .input-group-prepend span {
 	width: 50px;
 	background-color: #881862;
@@ -40,7 +36,7 @@ input:focus {
 	box-shadow: 0 0 0 0 !important;
 }
 
-.remember {
+/* .remember {
 	color: white;
 }
 
@@ -49,8 +45,9 @@ input:focus {
 	height: 20px;
 	margin-left: 15px;
 	margin-right: 5px;
-}
+} */
 
+/* Btn */
 .login_btn {
 	color: black;
 	background-color: #881862;
@@ -61,3 +58,31 @@ input:focus {
 	color: black;
 	background-color: white;
 }
+
+/* !Media Quey phone starts */
+@media screen and (max-width: 414px) {
+	.card {
+		height: 470px;
+		width: 500px;
+	}
+	/* Btn */
+	.login_btn {
+		color: #ffffff;
+		width: 100%;
+	}
+}
+/* !Media Quey phone finish */
+
+/* !Media Quey tablet starts */
+@media screen and (max-width: 768px) {
+	.card {
+		height: 390px;
+		width: 500px;
+	}
+	/* Btn */
+	.login_btn {
+		color: #ffffff;
+		width: 100%;
+	}
+}
+/* !Media Quey tablet finish */

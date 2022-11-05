@@ -10,7 +10,7 @@ body {
 	padding-bottom: 40px;
 	color: #ffffff;
 }
-/*? LABEL */
+/* LABEL start */
 .label {
 	display: flex;
 	flex-direction: column;
@@ -21,7 +21,7 @@ body {
 	color: #ffffff;
 	margin-bottom: 20px;
 }
-
+/* btns: deselect all items and checkout */
 .basket-btn,
 .home-btn {
 	background-color: rgb(59, 131, 189);
@@ -35,9 +35,10 @@ body {
 .home-btn:hover {
 	background-color: rgb(90, 4, 144);
 }
-/*? LABEL finish */
+/* LABEL finish */
 
-/*? SHOPPING-CART  */
+/* SHOPPING-CART  */
+/* all the page */
 .cart-page {
 	background-color: #01061e;
 	display: flex;
@@ -47,6 +48,7 @@ body {
 	margin: auto;
 	padding-bottom: 100px !important;
 }
+/* vouchers shopping */
 .cart-section {
 	background-color: #01061e;
 	display: flex;
@@ -60,6 +62,7 @@ body {
 	flex-direction: column;
 	justify-content: center !important;
 }
+/* individual voucher shopping */
 .cart-item {
 	height: 120px;
 	color: #ffffff;
@@ -69,19 +72,22 @@ body {
 	border-color: #01061e;
 	margin-bottom: 10px;
 }
+/* img voucher */
 .img-voucher-cart {
 	width: 100%;
 	height: 120px;
 	border-radius: 1rem 0 0 1rem;
 }
+/* Delete icon */
 span.fa.fa-trash {
 	padding-left: 10px;
 	color: aliceblue;
 }
-/*? SHOPPING-CART  finish */
+/* SHOPPING-CART  finish */
 
 /* !Media Quey phone starts */
 @media screen and (max-width: 414px) {
+	/* mobile title */
 	.title-basket {
 		padding-top: 40px;
 		padding-bottom: 20px;
@@ -89,9 +95,11 @@ span.fa.fa-trash {
 	h1 {
 		font-size: 33px !important;
 	}
+	/* mobile subtitle: total bill */
 	h2 {
 		font-size: 25px !important;
 	}
+	/* all the page */
 	.cart-page {
 		width: 80% !important;
 		margin: auto;
@@ -100,5 +108,23 @@ span.fa.fa-trash {
 }
 /* !Media Quey tablet starts */
 @media screen and (max-width: 768px) {
+	/* mobile title */
+	.title-basket {
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+	h1 {
+		font-size: 33px !important;
+	}
+	/* mobile subtitle: total bill */
+	h2 {
+		font-size: 25px !important;
+	}
+	/* all the page */
+	.cart-page {
+		width: 70% !important;
+		margin: auto;
+		padding-bottom: 50px !important;
+	}
 }
 /* !Media Quey tablet finish */

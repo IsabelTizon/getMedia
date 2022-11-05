@@ -70,6 +70,7 @@ p.text-section-videos {
 }
 .yellow-yourMusic {
 	color: rgb(247, 247, 7);
+	font-weight: lighter;
 }
 #goToSearch {
 	width: 30%;
@@ -91,7 +92,11 @@ p.text-section-videos {
 	align-items: center;
 	margin-bottom: 40px;
 }
-
+.subtitle-page {
+	font-weight: lighter;
+	color: yellow;
+	font-size: 18px;
+}
 .music-cards-section {
 	width: 80%;
 	margin: auto;
@@ -399,8 +404,7 @@ button:hover {
 	}
 	.subtitle-page {
 		padding-top: 5px;
-		font-size: 22px;
-		font-weight: bold;
+		font-size: 18px;
 	}
 	.text-vouchers {
 		margin-bottom: 40px;
@@ -446,5 +450,132 @@ button:hover {
 
 /* !Media Quey tablet starts */
 @media screen and (max-width: 768px) {
+	/*intro section start */
+	.intro {
+		width: 70%;
+		margin: 60px auto 100px;
+	}
+	.title-intro {
+		font-size: 45px;
+		padding-top: 5%;
+	}
+	.subtitle-intro {
+		width: 100%;
+		font-size: 21px;
+	}
+	.big-logo-silhouette img {
+		width: 100%;
+		height: 160px;
+	}
+	/*intro section finish */
+
+	/*Your Music section start */
+	.yourMusic {
+		width: 90%;
+		flex-direction: column;
+		margin-bottom: 70px;
+	}
+	.middleElements {
+		width: 100%;
+	}
+	p.text-section-videos {
+		width: 100%;
+		font-size: 18px;
+	}
+	.yellow-yourMusic {
+		font-size: 20px;
+	}
+	#goToSearch {
+		width: 100%;
+		height: 50px;
+	}
+
+	.section-videos {
+		margin: 0 7.5% 40px;
+		width: 100%;
+		justify-content: center;
+	}
+	.video-vertical {
+		height: 200px;
+	}
+	.video-horizontal {
+		height: 130px;
+	}
+	.last-vertical {
+		width: 22%;
+	}
+	/*Your Music section finish */
+
+	/* Music VOUCHERS Section start */
+	.subtitle-page {
+		font-size: 20px;
+	}
+	.music-cards-section {
+		width: 90%;
+		margin: auto;
+	}
+	.music-cards-text {
+		width: 85%;
+		margin: auto;
+	}
+	.text-vouchers {
+		font-size: 17px;
+	}
+	/* vouchers */
+	.music-cards-section {
+		margin-bottom: 80px;
+	}
+	.vouchers-card-deck {
+		padding: 0 !important;
+	}
+	.card-voucher {
+		width: 88%;
+		margin: 10px 20px !important;
+	}
+	.card-title-voucher-home {
+		font-size: 20px;
+		padding-bottom: 25px;
+	}
+	.card-text-voucher-home {
+		font-size: 16px;
+	}
+	.btn-cart-card {
+		width: 90%;
+		padding: 6px 3px !important;
+	}
+	/* Music VOUCHERS Section finish */
+
+	/* Your Music-Gift start */
+	.yourMusic-Gift {
+		display: flex;
+		flex-direction: column;
+	}
+	.img-surprise {
+		height: 300px;
+	}
+	.section-surprise-text {
+		width: 100%;
+		margin: 0;
+		padding-top: 20px;
+	}
+	.text-section-surprise {
+		font-size: 18px;
+	}
+	.btn-buy-gift {
+		width: 100%;
+		font-size: 20px !important;
+	}
+	/* Your Music-Gift finish */
+
+	/*  Music CARDS CAROUSEL section start */
+	.card-text-group-carousel {
+		font-size: 16px;
+	}
+	.col-song-card {
+		width: 200px;
+		height: 300px;
+		padding-bottom: 20px;
+	}
+	/* Music CARDS CAROUSEL section finish */
 }
 /* !Media Quey tablet finish */

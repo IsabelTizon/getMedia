@@ -1,8 +1,16 @@
-table {
-	background-color: #2e2d44;
-	width: 90%;
+/*  input */
+.form-search-iTunes {
+	padding-top: 80px;
+	padding-bottom: 80px;
 	margin: auto;
-	border-collapse: separate;
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.input-search-searchPage {
+	width: 85%;
+	height: 40px;
 }
 .btn-search-searchPage {
 	color: #ffffff !important;
@@ -18,6 +26,14 @@ table {
 .btn-search-searchPage:hover {
 	background-color: rgb(90, 4, 144) !important;
 }
+/* results table */
+table {
+	background-color: #2e2d44;
+	width: 90%;
+	margin: auto;
+	border-collapse: separate;
+}
+/* big image */
 .intro-itunes-search,
 tr {
 	margin: auto;
@@ -34,6 +50,8 @@ tr {
 	height: 300px;
 	padding-bottom: 50px;
 }
+
+/* row characteristics  */
 td.litle-itunes-img,
 td.itunes-price,
 td.itunes-play {
@@ -52,38 +70,14 @@ td.artist-name {
 	color: rgb(226, 226, 13);
 	width: 25%;
 }
-.big-img-itunes {
-	width: 90%;
-	height: 300px;
-}
-.form-search-iTunes {
-	padding-top: 80px;
-	padding-bottom: 80px;
-	margin: auto;
-	width: 70%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
 .icon-play {
 	width: 30px;
 	height: 30px;
 }
-.input-search-searchPage {
-	width: 85%;
-	height: 40px;
-}
-/* .btn-search-searchPage {
-	width: 15%;
-} */
 
 /* !Media Quey phone starts */
 @media screen and (max-width: 414px) {
-	table {
-		width: 95%;
-		margin: auto;
-	}
+	/*  input */
 	.form-search-iTunes {
 		padding-top: 50px;
 		padding-bottom: 50px;
@@ -101,11 +95,18 @@ td.artist-name {
 		justify-content: center;
 		padding-bottom: 50px;
 	}
+	/* results table */
+	table {
+		width: 95%;
+		margin: auto;
+	}
+	/* big image */
 	.big-img-itunes {
 		width: 100% !important;
 		height: 400px;
 		padding-bottom: 30px;
 	}
+	/* row characteristics  */
 	td.litle-itunes-img {
 		display: block;
 		float: left;
@@ -141,7 +142,6 @@ td.artist-name {
 		width: 42px;
 		height: 44px;
 	}
-
 	td th,
 	td {
 		display: block;
@@ -149,5 +149,23 @@ td.artist-name {
 }
 /* !Media Quey tablet starts */
 @media screen and (max-width: 768px) {
+	.form-search-iTunes {
+		width: 80%;
+	}
+	.form-search-iTunes {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		width: 70%;
+	}
+	.btn-search-searchPage {
+		flex-wrap: nowrap;
+		padding-left: 3.7%;
+		width: 20%;
+	}
+	.big-img-itunes {
+		width: 50% !important;
+		height: 330px;
+		padding-bottom: 30px;
+	}
 }
 /* !Media Quey tablet finish */
