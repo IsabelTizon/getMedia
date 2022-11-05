@@ -124,6 +124,7 @@
 			<div data-ng-show="songs">
 				<div id="intro-itunes-search" class="intro-itunes-search">
 					<img
+						src="#"
 						class="big-img-itunes"
 						data-ng-src="{{songs[0].artworkUrl100}}"
 						alt="{{song.collectionName}}"
@@ -136,6 +137,7 @@
 						<tr class="mobile-table" data-ng-repeat="song in songs">
 							<td class="litle-itunes-img">
 								<img
+									src="#"
 									class="img-table"
 									data-ng-src="{{song.artworkUrl60}}"
 									alt="{{song.collectionName}}"
@@ -147,7 +149,7 @@
 							<td class="itunes-genre">{{song.primaryGenreName}}</td>
 							<td class="itunes-price">£{{song.collectionPrice}}</td>
 							<td class="itunes-play">
-								<a href="{{song.previewUrl}}"
+								<a href=" {{song.previewUrl}} "
 									><img
 										class="icon-play"
 										src="../img/icons/play.png"
