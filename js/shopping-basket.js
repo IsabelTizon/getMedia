@@ -59,7 +59,7 @@ let generateCartItems = () => {
 										</div>
 									</div>
 								</div>
-								<div class="col">
+								<div class="col col-cart-item-price">
 									<p class="cart-item-price">£ ${item * search.price}</p>
 								</div>
 								<div class="col">

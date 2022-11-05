@@ -124,8 +124,13 @@ span.fa.fa-trash {
 	}
 	/* all the page */
 	.cart-page {
-		width: 80% !important;
+		width: 88% !important;
 		margin: auto;
 		padding-bottom: 50px !important;
+	}
+	.col-cart-item-price {
+		padding-right: 0 !important;
+		padding-left: 12px !important;
+		position: 0 !important;
 	}
 }
