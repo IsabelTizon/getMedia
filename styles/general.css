@@ -220,6 +220,59 @@ p.title-section-footer {
 }
 /* FOOTER finish  */
 
+/* !Media Quey tablet start */
+@media screen and (max-width: 768px) {
+	/* Navbar mobile start  */
+	.logo {
+		max-height: 70px;
+		padding-top: 20;
+	}
+	/*links*/
+	ul.navbar-nav.mr-auto.d-flex.flex-row {
+		order: 0;
+	}
+	.nav-item {
+		padding-bottom: 10px;
+	}
+	.nav-item-home {
+		margin-left: 0;
+	}
+	span.text-link-nav {
+		margin-top: 0 !important;
+	}
+
+	/* collapse */
+	.navbar-collapse {
+		padding: 14px;
+	}
+	.container-link-nav-collapse {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.text-link-nav {
+		display: block;
+		color: #eadbf6;
+		margin-top: 10px;
+		padding-left: 10px;
+	}
+	/* Navbar mobile finish  */
+	/* Footer tablet start  */
+	.container-footer {
+		width: 80%;
+	}
+	.section-links {
+		width: 32% !important;
+		padding-bottom: 30px;
+	}
+	.section-media {
+		width: 45% !important;
+		padding-bottom: 15px;
+	}
+	/* Footer tablet finish  */
+}
+/* !Media Quey tablet finish */
+
 /* !MEDIA QUERY phone starts */
 @media screen and (max-width: 414px) {
 	/* Navbar mobile start  */
@@ -279,11 +332,11 @@ p.title-section-footer {
 		padding-bottom: 20px;
 	}
 	.section-links {
-		width: 42%;
+		width: 50% !important;
 		padding-bottom: 20px;
 	}
 	.section-media {
-		width: 100%;
+		width: 100% !important;
 		padding-bottom: 15px;
 	}
 	/* text */
@@ -314,56 +367,3 @@ p.title-section-footer {
 	/* Footer mobile finish  */
 }
 /* !Media Quey phone finish */
-
-/* !Media Quey tablet start */
-@media screen and (max-width: 768px) {
-	/* Navbar mobile start  */
-	.logo {
-		max-height: 70px;
-		padding-top: 20;
-	}
-	/*links*/
-	ul.navbar-nav.mr-auto.d-flex.flex-row {
-		order: 0;
-	}
-	.nav-item {
-		padding-bottom: 10px;
-	}
-	.nav-item-home {
-		margin-left: 0;
-	}
-	span.text-link-nav {
-		margin-top: 0 !important;
-	}
-
-	/* collapse */
-	.navbar-collapse {
-		padding: 14px;
-	}
-	.container-link-nav-collapse {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-	}
-	.text-link-nav {
-		display: block;
-		color: #eadbf6;
-		margin-top: 10px;
-		padding-left: 10px;
-	}
-	/* Navbar mobile finish  */
-	/* Footer tablet start  */
-	.container-footer {
-		width: 80%;
-	}
-	.section-links {
-		width: 32% !important;
-		padding-bottom: 30px;
-	}
-	.section-media {
-		width: 45% !important;
-		padding-bottom: 15px;
-	}
-	/* Footer tablet finish  */
-}
-/* !Media Quey tablet finish */

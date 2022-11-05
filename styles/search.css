@@ -75,6 +75,29 @@ td.artist-name {
 	height: 30px;
 }
 
+/* !Media Quey tablet starts */
+@media screen and (max-width: 768px) {
+	.form-search-iTunes {
+		width: 80%;
+	}
+	.form-search-iTunes {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		width: 70%;
+	}
+	.btn-search-searchPage {
+		flex-wrap: nowrap;
+		padding-left: 3.7%;
+		width: 20%;
+	}
+	.big-img-itunes {
+		width: 50% !important;
+		height: 330px;
+		padding-bottom: 30px;
+	}
+}
+/* !Media Quey tablet finish */
+
 /* !Media Quey phone starts */
 @media screen and (max-width: 414px) {
 	/*  input */
@@ -147,25 +170,4 @@ td.artist-name {
 		display: block;
 	}
 }
-/* !Media Quey tablet starts */
-@media screen and (max-width: 768px) {
-	.form-search-iTunes {
-		width: 80%;
-	}
-	.form-search-iTunes {
-		padding-top: 80px;
-		padding-bottom: 80px;
-		width: 70%;
-	}
-	.btn-search-searchPage {
-		flex-wrap: nowrap;
-		padding-left: 3.7%;
-		width: 20%;
-	}
-	.big-img-itunes {
-		width: 50% !important;
-		height: 330px;
-		padding-bottom: 30px;
-	}
-}
-/* !Media Quey tablet finish */
+/* !Media Quey phone finish */

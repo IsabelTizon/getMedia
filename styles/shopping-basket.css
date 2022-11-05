@@ -85,27 +85,6 @@ span.fa.fa-trash {
 }
 /* SHOPPING-CART  finish */
 
-/* !Media Quey phone starts */
-@media screen and (max-width: 414px) {
-	/* mobile title */
-	.title-basket {
-		padding-top: 40px;
-		padding-bottom: 20px;
-	}
-	h1 {
-		font-size: 33px !important;
-	}
-	/* mobile subtitle: total bill */
-	h2 {
-		font-size: 25px !important;
-	}
-	/* all the page */
-	.cart-page {
-		width: 80% !important;
-		margin: auto;
-		padding-bottom: 50px !important;
-	}
-}
 /* !Media Quey tablet starts */
 @media screen and (max-width: 768px) {
 	/* mobile title */
@@ -128,3 +107,25 @@ span.fa.fa-trash {
 	}
 }
 /* !Media Quey tablet finish */
+
+/* !Media Quey phone starts */
+@media screen and (max-width: 414px) {
+	/* mobile title */
+	.title-basket {
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+	h1 {
+		font-size: 33px !important;
+	}
+	/* mobile subtitle: total bill */
+	h2 {
+		font-size: 25px !important;
+	}
+	/* all the page */
+	.cart-page {
+		width: 80% !important;
+		margin: auto;
+		padding-bottom: 50px !important;
+	}
+}

@@ -66,8 +66,32 @@
 }
 /* form-pages styles are in general.css file */
 
+/* !Media Quey tablet starts */
+@media screen and (max-width: 768px) {
+	.intro-pages {
+		width: 80%;
+		margin: auto;
+	}
+	.content-contact {
+		width: 80%;
+		margin: 5% auto 0;
+	}
+	.contact-form {
+		width: 97%;
+	}
+	.img-contact {
+		width: 90%;
+		margin: 0;
+		height: 290px;
+	}
+}
+/* !Media Quey tablet finish */
+
 /* !Media Quey phone starts */
 @media screen and (max-width: 414px) {
+	main {
+		padding-bottom: 0 !important;
+	}
 	/* Tex intro: Title and subtitle */
 	.intro-pages {
 		width: 80%;
@@ -107,26 +131,4 @@
 		width: 100%;
 	}
 }
-
 /* !Media Quey phone finish */
-
-/* !Media Quey tablet starts */
-@media screen and (max-width: 768px) {
-	.intro-pages {
-		width: 80%;
-		margin: auto;
-	}
-	.content-contact {
-		width: 80%;
-		margin: 5% auto 0;
-	}
-	.contact-form {
-		width: 97%;
-	}
-	.img-contact {
-		width: 90%;
-		margin: 0;
-		height: 290px;
-	}
-}
-/* !Media Quey tablet finish */

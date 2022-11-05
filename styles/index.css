@@ -67,15 +67,6 @@ button:hover {
 	color: white !important;
 }
 
-/* !Media Quey phone starts */
-@media screen and (max-width: 414px) {
-	.p-overlay {
-		font-size: 15px !important;
-		padding: 5px !important;
-	}
-}
-/* !Media Quey phone finish */
-
 /* !Media Quey tablet starts */
 @media screen and (max-width: 768px) {
 	.container-sign {
@@ -87,3 +78,15 @@ button:hover {
 	}
 }
 /* !Media Quey tablet finish */
+
+/* !Media Quey phone starts */
+@media screen and (max-width: 414px) {
+	.container-sign {
+		width: 77vw !important;
+	}
+	.p-overlay {
+		font-size: 18px !important;
+		padding: 5px !important;
+	}
+}
+/* !Media Quey phone finish */

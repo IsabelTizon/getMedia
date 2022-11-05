@@ -59,20 +59,6 @@ input:focus {
 	background-color: white;
 }
 
-/* !Media Quey phone starts */
-@media screen and (max-width: 414px) {
-	.card {
-		height: 470px;
-		width: 500px;
-	}
-	/* Btn */
-	.login_btn {
-		color: #ffffff;
-		width: 100%;
-	}
-}
-/* !Media Quey phone finish */
-
 /* !Media Quey tablet starts */
 @media screen and (max-width: 768px) {
 	.card {
@@ -86,3 +72,17 @@ input:focus {
 	}
 }
 /* !Media Quey tablet finish */
+
+/* !Media Quey phone starts */
+@media screen and (max-width: 414px) {
+	.card {
+		height: 470px;
+		width: 500px;
+	}
+	/* Btn */
+	.login_btn {
+		color: #ffffff;
+		width: 100%;
+	}
+}
+/* !Media Quey phone finish */
