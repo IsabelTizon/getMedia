@@ -6,7 +6,7 @@ var iTunesController = function ($scope, $http) {
 		// use the jsonp callback function from the $http service this
 		// will get around any limitations for cross-domain scripting.
 		$http
-			.jsonp("http://itunes.apple.com/search", {
+			.jsonp("https://itunes.apple.com/search", {
 				params: {
 					callback: "JSON_CALLBACK",
 					term: artist,
