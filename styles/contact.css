@@ -84,6 +84,10 @@
 		margin: 0;
 		height: 290px;
 	}
+	#mapContainer {
+		width: 95vw !important;
+		height: 70vw !important;
+	}
 }
 /* !Media Quey tablet finish */
 
@@ -129,6 +133,10 @@
 	/* form */
 	.contact-form {
 		width: 100%;
+	}
+	#mapContainer {
+		width: 95vw !important;
+		height: 70vw !important;
 	}
 }
 /* !Media Quey phone finish */
