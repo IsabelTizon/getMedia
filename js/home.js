@@ -16,7 +16,7 @@ let generateShop = () => {
 			// to not write the x in ${x.id}, ${x.name}, ${x.desc}, ${x.img}
 			// x is the object
 
-			let search = basket.find((x) => x.id === id) || [];
+			// let search = basket.find((x) => x.id === id) || [];
 			//if nothing can be found an empty array will be return
 			//but if something is found the next code will return
 			return `
@@ -54,7 +54,7 @@ let generateShop = () => {
 				    </div>
 			</div>`;
 		})
-		.join("")); //join methond concatenates an array of strings into one string
+		.join("")); //join method concatenates an array of strings into one string
 };
 
 // Here I run the function
